@@ -23,6 +23,39 @@ body {
     margin: 0px auto;
 }
 
+body {
+    background-image: url(/assets/images/background.webp);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 3vh;
+    align-items: center;
+
+    /* border: solid 5px green; */
+    /*     .logo {
+        grid-area: logo;
+    }
+
+    .btnsign {
+        grid-area: btn;
+    } */
+}
+
+.btnsign {
+    button {
+        color: white;
+        background-color: $purple-color;
+        padding: 8px;
+        font-size: larger;
+        font-weight: 500;
+        border-radius: 15px;
+        border-width: 2px;
+    }
+}
+
 // шаблон под медиа запросы для адаптации; используйте по необходимости, исходя из расположения контента)
 @media screen and (max-width: $mobile) {}
 

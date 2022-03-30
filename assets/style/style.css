@@ -5,4 +5,34 @@ body {
 .content_container {
   max-width: 1440px;
   margin: 0px auto;
+}
+
+body {
+  background-image: url(/assets/images/background.webp);
+}
+
+header {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 3vh;
+  align-items: center;
+  /* border: solid 5px green; */
+  /*     .logo {
+      grid-area: logo;
+  }
+
+  .btnsign {
+      grid-area: btn;
+  } */
+}
+
+.btnsign button {
+  color: white;
+  background-color: #3F3D56;
+  padding: 8px;
+  font-size: larger;
+  font-weight: 500;
+  border-radius: 15px;
+  border-width: 2px;
 }/*# sourceMappingURL=style.css.map */
