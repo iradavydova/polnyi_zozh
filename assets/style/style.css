@@ -1,3 +1,8 @@
 body {
   font-family: "Roboto", sans-serif, Times;
+}
+
+.content_container {
+  max-width: 1440px;
+  margin: 0px auto;
 }/*# sourceMappingURL=style.css.map */

@@ -1,9 +1,33 @@
+// Задаем переменные: цвета, шрифт, переменные для брейкпоинтов
 $whiteblue-color: #E7F7FF;
 $lightblue-color: #CCEEEF;
 $lightgrey-color: #E7E8FF;
 $purple-color: #3F3D56;
 $aqua-color: #034C65;
 
+$default-font: 'Roboto',
+sans-serif,
+Times;
+
+$desktop: 1280px;
+$ipad: 1024px;
+$tablet: 768px;
+$mobile: 640px;
+
 body {
-    font-family: 'Roboto', sans-serif, Times;
+    font-family: $default-font;
 }
+
+.content_container {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+// шаблон под медиа запросы для адаптации; используйте по необходимости, исходя из расположения контента)
+@media screen and (max-width: $mobile) {}
+
+@media screen and (min-width: $mobile) and (max-width: $tablet) {}
+
+@media screen and (min-width: $tablet) and (max-width: $desktop) {}
+
+@media screen and (min-width: $desktop) {}
