@@ -23,6 +23,71 @@ body {
     margin: 0px auto;
 }
 
+.registration {
+    text-align: center;
+
+
+    .say_hi {
+        font-size: 20px;
+        color: rgba(63, 61, 86, 1);
+        margin-top: 79px;
+        margin-bottom: 33.76px;
+    }
+
+    .form-control {
+        margin-bottom: 22px;
+    }
+
+    #checkbox1 {
+        height: 16.27118682861328px;
+        width: 16.761903762817383px;
+    }
+
+    .main-checkbox {
+        margin-bottom: 33px;
+    }
+
+    .text-xs-center {
+        margin-bottom: 21px;
+    }
+
+    .button {
+        height: 61.02px;
+        border-radius: 99px;
+        color: white;
+        background-color: rgba(3, 76, 101, 1);
+        font-size: 16px;
+        width: 315px;
+        box-shadow: 5px 5px 5px darkgrey;
+    }
+
+    .ili {
+        margin-bottom: 22px;
+    }
+
+    .account {
+        margin-top: 33px;
+    }
+
+    .form-control {
+        background-color: rgba(247, 248, 248, 1);
+        height: 48.81px;
+        border-radius: 14px;
+    }
+
+    .ili {
+        font-size: 12px;
+        padding: 0 10px;
+        border-bottom: 1px solid rgba(221, 218, 218, 1);
+    }
+
+    .soglasie {
+        font-size: 10px;
+        color: rgba(173, 164, 165, 1);
+    }
+
+}
+
 // шаблон под медиа запросы для адаптации; используйте по необходимости, исходя из расположения контента)
 @media screen and (max-width: $mobile) {}
 

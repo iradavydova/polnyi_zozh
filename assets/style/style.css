@@ -5,4 +5,56 @@ body {
 .content_container {
   max-width: 1440px;
   margin: 0px auto;
+}
+
+.registration {
+  text-align: center;
+}
+.registration .say_hi {
+  font-size: 20px;
+  color: #3f3d56;
+  margin-top: 79px;
+  margin-bottom: 33.76px;
+}
+.registration .form-control {
+  margin-bottom: 22px;
+}
+.registration #checkbox1 {
+  height: 16.2711868286px;
+  width: 16.7619037628px;
+}
+.registration .main-checkbox {
+  margin-bottom: 33px;
+}
+.registration .text-xs-center {
+  margin-bottom: 21px;
+}
+.registration .button {
+  height: 61.02px;
+  border-radius: 99px;
+  color: white;
+  background-color: #034c65;
+  font-size: 16px;
+  width: 315px;
+  box-shadow: 5px 5px 5px darkgrey;
+}
+.registration .ili {
+  margin-bottom: 22px;
+}
+.registration .account {
+  margin-top: 33px;
+}
+.registration .form-control {
+  background-color: #f7f8f8;
+  height: 48.81px;
+  border-radius: 14px;
+}
+.registration .ili {
+  font-size: 12px;
+  padding: 0 10px;
+  border-bottom: 1px solid #dddada;
+}
+.registration .soglasie {
+  font-size: 10px;
+  color: #ada4a5;
 }/*# sourceMappingURL=style.css.map */
