@@ -7,32 +7,90 @@ body {
   margin: 0px auto;
 }
 
-body {
-  background-image: url(/assets/images/background.webp);
-}
-
 header {
   display: grid;
-  grid-template-columns: 5fr 1fr;
-  grid-template-rows: 1fr;
-  padding-top: 3vh;
+  grid-template-areas: "logo btn";
   align-items: center;
-  /* border: solid 5px green; */
-  /*     .logo {
-      grid-area: logo;
-  }
-
-  .btnsign {
-      grid-area: btn;
-  } */
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
+}
+header .logo {
+  grid-area: logo;
+  padding-left: 3vw;
+}
+header .btnsign {
+  grid-area: btn;
+  justify-self: end;
+  padding-right: 3vw;
 }
 
 .btnsign button {
   color: white;
-  background-color: #3F3D56;
+  background-color: #C58BF2;
   padding: 8px;
   font-size: larger;
   font-weight: 500;
   border-radius: 15px;
+  box-shadow: 7px 7px 5px #2F2E41;
   border-width: 2px;
+  border-color: #2F2E41;
+}
+
+main .phrase {
+  height: 80vh;
+  border: solid 2px #2F2E41;
+  background: url(/assets/images/man_women_smile.svg) no-repeat;
+  background-size: 100vh auto;
+  background-position: center bottom;
+  /* background-color: #92A3FD; */
+}
+
+main .information {
+  padding-top: 5vh;
+  height: 90vh;
+  background: url(/assets/images/heart.svg) no-repeat;
+  background-size: 100vh auto;
+  background-position: right bottom;
+  color: #2F2E41;
+}
+main .information h1 {
+  text-align: center;
+}
+main .information .text, main .information .btnsign p {
+  font-size: 22px;
+  font-weight: 500;
+}
+main .information .text, main .information .btnsign {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+main .information ul {
+  margin-left: 10vw;
+}
+main .information li {
+  margin-bottom: 10px;
+}
+main .information li.productivity {
+  list-style-image: url(/assets/images/open-book.png);
+}
+main .information li.fitness {
+  list-style-image: url(/assets/images/weights.png);
+}
+main .information li.meditation {
+  list-style-image: url(/assets/images/lotus.png);
+}
+main .information li.drinking {
+  list-style-image: url(/assets/images/water-bottle.png);
+}
+main .information li.eating {
+  list-style-image: url(/assets/images/food.svg);
+}
+main .information li.sleep {
+  list-style-image: url(/assets/images/bed.svg);
+}
+
+footer {
+  height: 20vh;
+  background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
 }/*# sourceMappingURL=style.css.map */
