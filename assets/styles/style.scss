@@ -1,6 +1,7 @@
 // Задаем переменные: цвета, шрифт, переменные для брейкпоинтов
 $lavender-color: #C58BF2;
 $blue-color: #2F2E41;
+$gray-color: rgba(146, 163, 253, 0.25);
 
 $default-font: 'Roboto',
 sans-serif,
@@ -18,28 +19,17 @@ body {
 .content_container {
     max-width: 1440px;
     margin: 0px auto;
+    background: $gray-color;
 }
 
 header {
-    display: grid;
-    grid-template-areas: "logo btn";
     align-items: center;
     padding-top: 2vh;
-    padding-bottom: 2vh;
-    background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
-    .logo {
-        grid-area: logo;
-        padding-left: 3vw;
-    }
-    .btnsign {
-        grid-area: btn;
-        justify-self: end;
-        padding-right: 3vw;
-    }
+    padding-left: 3vw;
 }
 
-.btnsign button {
-        color: white;
+.btn_decor button {
+        color: $blue-color;
         background-color: $lavender-color;
         padding: 8px;
         font-size: larger;
@@ -50,17 +40,31 @@ header {
         border-color: $blue-color;
 }
 
+main{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
 main .quote_container {
-    height: 80vh;
-    border: solid 2px $blue-color;
+    height: 70vh;
     background: url(/assets/images/man_women_smile.svg) no-repeat;
-    background-size: 100vh auto;
+    background-size: 95vh auto;
     background-position: center bottom;
-    /* background-color: #92A3FD; */
+    text-align: center;
+    p {
+        color: $blue-color;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    #author, .btn_decor{
+        text-align: right;
+    }
+    #author {
+        margin-right: 8px;
+    }
 }
 
 main .information {
-    padding-top: 5vh;
     height: 90vh;
     background: url(/assets/images/heart.svg) no-repeat;
     background-size: 100vh auto;
@@ -69,16 +73,16 @@ main .information {
     h1{
         text-align: center;
     }
-    .text, .btnsign p{
+    h3{
+        margin-block-end: 2vh;
+    }
+    .text, .btn_decor p{
         font-size: 22px;
         font-weight: 500;
     }
-    .text, .btnsign{
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
     ul{
         margin-left: 10vw;
+        margin-block-start: 0px;
     }
     li{
         margin-bottom: 10px;
@@ -104,7 +108,7 @@ main .information {
 }
 
 footer {
-    height: 20vh;
+    height: 15vh;
     background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
 }
 
