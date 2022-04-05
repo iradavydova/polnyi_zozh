@@ -1,1 +1,10 @@
-{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AAgBA;EACI,wCAVW;ACLf;;ADkBA;EACI,iBAAA;EACA,gBAAA;ACfJ","file":"style.css"}
+{
+    "version": 3,
+    "mappings": "AAmBA,AAAA,IAAI,CAAC;EACD,WAAW,EAbA,QAAQ,EACvB,UAAU,EACV,KAAK;CAYJ;;AAED,AAAA,kBAAkB,CAAC;EACf,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,QAAQ;CACnB",
+    "sources": [
+        "style.scss",
+        "_second_page.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

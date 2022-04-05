@@ -14,7 +14,8 @@ $ipad: 1024px;
 $tablet: 768px;
 $mobile: 640px;
 
-@import "second_page.scss";
+@import "second_page.scss"; //импорт файла стилей для второй страницы сайта 
+
 
 body {
     font-family: $default-font;
