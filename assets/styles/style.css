@@ -6,4 +6,115 @@ body {
   max-width: 1440px;
   margin: 0px auto;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 40% 55%;
+      grid-template-columns: 5% 40% 55%;
+      grid-template-areas: "header main side";
+  height: 100vh;
+}
+
+.header-second {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-color: rgba(146, 163, 253, 0.25);
+}
+
+.header-second__nav {
+  padding-top: 25px;
+  height: 100%;
+}
+
+.header-second__nav img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.main-second {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main;
+  background-color: rgba(242, 242, 242, 0.5);
+}
+
+.habit {
+  margin: 4rem auto;
+  width: 80%;
+}
+
+.habit ul {
+  border: 1px solid green;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0px;
+}
+
+.habit li {
+  border: 1px solid red;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.habit li p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (hover: hover) {
+  .habit li:hover, .habit li:active {
+    background-color: rgba(238, 164, 206, 0.5);
+    -webkit-transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear;
+  }
+}
+
+.habit .new-habit {
+  border: 1px solid red;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+}
+
+.habit .inputbox {
+  width: 80%;
+  margin: auto;
+  font-size: 1.6rem;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.habit .inputbox img {
+  height: 1em;
+}
+
+.habit .inputbox input {
+  margin-left: 5px;
+  width: 80%;
+}
+
+.sideblock {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: side;
+}
 /*# sourceMappingURL=style.css.map */

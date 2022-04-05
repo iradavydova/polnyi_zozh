@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Полный ЗОЖ</title>
 
-    <link rel="stylesheet" href="assets/styles/normalize.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,8 +19,8 @@
 <body>
     <div class="grid-container content_container">
 
-        <header>
-        <nav class="">
+        <header class="header-second">
+        <nav class="header-second__nav">
             <div class="home">
                 <a href="#">
                     <img src="assets/img/home.svg" alt="домой">
@@ -36,39 +36,44 @@
             </nav>
         </header>
 
-        <main class="">
-            <div class="todo">
+        <main class="main-second">
+            <div class="habit">
                 <h1>Список привычек</h1>
 
                 
-                <ul class="todo__items">
-                    <li class="todo__item">
-                        <div class="todo__delete"></div>
+                <ul class="habit__items">
+                    <li class="habit__item"><p>Тут должна быть добавленная привычка бла бла бла бла</p>
+                        <div class="habit__delete"></div>
+                    </li>
+                    <li class="habit__item"><p>Тут должна быть ооочень длинная добавленная привычка бла бла бла бла</p>
+                        <div class="habit__delete"></div>
                     </li>
                     
                 </ul>
 
-                <div class="todo__input">
-                    <img src="assets/img/plus.svg" alt="плюс">
-                    <input class="todo__text" type="text" placeholder="Добавить привычку">
+                <div class="new-habit">
+                    <div class="inputbox">
+                    <img id="new-habit__add" src="assets/img/plus.svg" alt="плюс">
+                    <input id="new-habit__name" type="text" placeholder="Добавить привычку">
+                    </div>
                 </div>
                 
             </div>
         </main>
 
-        <section class="">
+        <section class="sideblock">
 
             <div class="theme">
                 <div class="theme_light">
                     <p>светлая</p>
                     <a href="#">
-                        <img src="" alt="светлая">
+                        <img src="assets/img/sun-icon.svg" alt="светлая">
                     </a>
                 </div>
                 <div class="theme_dark">
                     <p>тёмная</p>
                     <a href="#">
-                        <img src="" alt="тёмная">
+                        <img src="assets/img/moon-icon.svg" alt="тёмная">
                     </a>
                 </div>
             </div>
@@ -108,13 +113,7 @@
 
 
         </section>
-
-
-
-        <footer>
-
-        </footer>
-</div>
+    </div>
 </body>
 
 </html>
