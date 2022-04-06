@@ -23,6 +23,33 @@ body {
     margin: 0px auto;
 }
 
+// стили для списка привычек
+.addBtn,
+        .clearBtn {
+            background-color: rgb(102, 102, 240);
+            border: solid 1px black;
+            border-radius: 5px;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .clearBtn {
+            background-color: rgb(209, 61, 152);
+            margin-left: 4px;
+        }
+
+        h2 {
+            margin-block-end: 0;
+        }
+
+        .deleteBtn {
+            background-color: rgb(255, 55, 155);
+            border: solid 1px black;
+            border-radius: 5px;
+            font-size: small;
+            font-weight: bold;
+        }
+
 // шаблон под медиа запросы для адаптации; используйте по необходимости, исходя из расположения контента)
 @media screen and (max-width: $mobile) {}
 
