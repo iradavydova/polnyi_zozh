@@ -35,8 +35,10 @@ function addStuff() {
 function liMaker(note) {
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.textContent = 'Delete note ';
     btn.className = 'deleteBtn';
+    const img = document.createElement('img');
+    img.setAttribute('src', '/assets/images/cross.svg');
+    btn.appendChild(img);
     btn.addEventListener("click", (e) => deleteNote(e));
 
     const li = document.createElement('li');
@@ -48,12 +50,14 @@ function liMaker(note) {
 }
 
 function deleteNote(e) {
-    const parent = e.target.parentNode;
+    let parent = e.target.parentElement.closest('li');
+    console.log(parent)
     parent.remove();
 
     localStorage.removeItem('notes');
     filteredItemsArray = itemsArray.filter((item) => item.id != parent.value);
     localStorage.setItem('notes', JSON.stringify(filteredItemsArray));
+    itemsArray = filteredItemsArray;
 }
 
 function clearList() {

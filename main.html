@@ -18,20 +18,22 @@
 
 <body>
     <div class="content_container">
-
         <header>
 
         </header>
         <main>
-            <h1>My list of notes!</h1>
-            <div>
-                <input type="text" placeholder="New note" class="note">
-                <input type="button" value="Submit" class="addBtn">
-                <input type="button" value="Clear List" class="clearBtn">
+            <div class="list_of_habits">
+                <div class="output_habit">
+                    <ul class="list"></ul>
+                </div>
+                <div class="input_habit">
+                    <input type="button" value="+" class="addBtn">
+                    <input type="text" placeholder="Добавить привычку" class="note" maxlength="30">
+                </div>
+                <div class="clear_all_habits">
+                    <input type="button" value="Очистить список" class="clearBtn">
+                </div>
             </div>
-
-            <ul class="list"></ul>
-
         </main>
         <footer>
 
