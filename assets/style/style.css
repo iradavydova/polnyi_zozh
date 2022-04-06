@@ -85,6 +85,10 @@ body {
 .registration .btn1:hover {
   border: 0.8px solid #DDDADA;
 }
+.registration .facebookicon {
+  padding-left: 50px;
+  padding-right: 16px;
+}
 .registration .account {
   margin-top: 33px;
 }
