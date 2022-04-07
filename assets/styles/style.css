@@ -43,7 +43,7 @@ html {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: main;
-  background-color: rgba(242, 242, 242, 0.5);
+  background-color: #F1F1F1;
 }
 
 .habit {
@@ -52,14 +52,13 @@ html {
 }
 
 .habit ul {
-  border: 1px solid green;
   list-style-type: none;
   margin: 0;
   padding-left: 0px;
 }
 
 .habit li {
-  border: 1px solid red;
+  border: 1px solid #E7E8FF;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -87,7 +86,7 @@ html {
 }
 
 .habit .new-habit {
-  border: 1px solid red;
+  border: 1px solid #E7E8FF;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -116,5 +115,36 @@ html {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: side;
+}
+
+.progress {
+  margin: 3rem auto;
+  width: 50%;
+}
+
+.progress h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #C58BF2;
+}
+
+.progress__bar {
+  width: 100%;
+  height: 45px;
+}
+
+.calendar {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 5em;
+  width: 80%;
+}
+
+.remind {
+  border-radius: 10px;
+  background-color: rgba(238, 164, 206, 0.5);
+  margin-left: 5em;
 }
 /*# sourceMappingURL=style.css.map */
