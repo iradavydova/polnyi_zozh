@@ -20,18 +20,18 @@
     <div class="grid-container content_container">
 
         <header class="header-second">
-        <nav class="header-second__nav">
-            <div class="home">
-                <a href="#">
-                    <img src="assets/img/home.svg" alt="домой">
-                </a>
-            </div>
-            
-            <div class="notif">
-                <a href="#">
-                    <img src="assets/img/bell.svg" alt="уведомления">
-                </a>
-            </div>
+            <nav class="header-second__nav">
+                <div class="home">
+                    <a href="#">
+                        <img src="assets/img/home.svg" alt="домой">
+                    </a>
+                </div>
+
+                <div class="notif">
+                    <a href="#">
+                        <img src="assets/img/bell.svg" alt="уведомления">
+                    </a>
+                </div>
 
             </nav>
         </header>
@@ -40,24 +40,26 @@
             <div class="habit">
                 <h1>Список привычек</h1>
 
-                
+
                 <ul class="habit__items">
-                    <li class="habit__item"><p>Тут должна быть добавленная привычка бла бла бла бла</p>
+                    <li class="habit__item">
+                        <p>Тут должна быть добавленная привычка бла бла бла бла</p>
                         <div class="habit__delete"></div>
                     </li>
-                    <li class="habit__item"><p>Тут должна быть ооочень длинная добавленная привычка бла бла бла бла</p>
+                    <li class="habit__item">
+                        <p>Тут должна быть ооочень длинная добавленная привычка бла бла бла бла</p>
                         <div class="habit__delete"></div>
                     </li>
-                    
+
                 </ul>
 
                 <div class="new-habit">
                     <div class="inputbox">
-                    <img id="new-habit__add" src="assets/img/plus.svg" alt="плюс">
-                    <input id="new-habit__name" type="text" placeholder="Добавить привычку">
+                        <img id="new-habit__add" src="assets/img/plus.svg" alt="плюс">
+                        <input id="new-habit__name" type="text" placeholder="Добавить привычку">
                     </div>
                 </div>
-                
+
             </div>
         </main>
 
@@ -65,25 +67,25 @@
 
             <div class="theme">
                 <div class="theme__block">
-                <div class="theme_light">
-                    <p>светлая</p>
-                    <a href="#">
-                        <img src="assets/img/sun-icon.svg" alt="светлая">
-                    </a>
+                    <div class="theme_light">
+                        <p>светлая</p>
+                        <a href="#">
+                            <img src="assets/img/sun-icon.svg" alt="светлая">
+                        </a>
+                    </div>
+                    <div class="theme_dark">
+                        <p>тёмная</p>
+                        <a href="#">
+                            <img src="assets/img/moon-icon.svg" alt="тёмная">
+                        </a>
+                    </div>
                 </div>
-                <div class="theme_dark">
-                    <p>тёмная</p>
-                    <a href="#">
-                        <img src="assets/img/moon-icon.svg" alt="тёмная">
-                    </a>
-                </div>
-            </div>
             </div>
 
 
-            <div class="progress"> 
+            <div class="progress">
                 <h2>МОЙ ПРОГРЕСС ЗА НЕДЕЛЮ</h2>
-                <progress class="progress__bar" id="my-progress-bar"  max="7" value="0"></progress>
+                <progress class="progress__bar" id="my-progress-bar" max="7" value="0"></progress>
                 <label for="my-progress-bar" id="progress-label">0%</label>
             </div>
 
@@ -91,7 +93,7 @@
                 Здесь будет календарь
 
                 <!-- <form class="progress__check" action=""> -->
-                    <form id="mark-done" action="">
+                <form id="mark-done" action="">
                     <input type="checkbox" name="" value="" class="select-done" id="monday">
                     <input type="checkbox" name="" value="" class="select-done" id="tuesday">
                     <input type="checkbox" name="" value="" class="select-done" id="wednesday">
@@ -100,29 +102,29 @@
                     <input type="checkbox" name="" value="" class="select-done" id="saturday">
                     <input type="checkbox" name="" value="" class="select-done" id="sunday">
                 </form>
-                    
+
             </div>
 
-            
+
 
             <div class="remind">
                 <img src="assets/img/clock.svg" alt="часы">
-                    <div>
-                        <span>НАПОМИНАТЬ В</span><br>
-                        <span class="settime">23:00</span>
-                    </div>
+                <div>
+                    <span>НАПОМИНАТЬ В</span><br>
+                    <span class="settime">23:00</span>
+                </div>
                 <img class="toggle" src="assets/img/toggle-active.svg" alt="переключатель">
 
             </div>
-        
-        </section>
-            <div class="picture">
-                
-                    <img src="assets/img/celebration.svg" alt="успех">
-            
-            </div>
 
-        
+        </section>
+        <div class="picture">
+
+            <img src="assets/img/celebration.svg" alt="успех">
+
+        </div>
+
+
     </div>
 
     <script src="assets/js/progressbar.js"></script>
