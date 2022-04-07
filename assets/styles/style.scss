@@ -5,6 +5,14 @@ $lightgrey-color: #E7E8FF;
 $purple-color: #3F3D56;
 $aqua-color: #034C65;
 
+
+$grey-color: #F1F1F1;
+$blue-transparent-color: rgba(146, 163, 253, 0.25);
+$pink-transparent-color: rgba(238, 164, 206, 0.5);
+$lightgrey-transparent-color: rgba(242, 242, 242, 0.5);
+$lilac-color:#C58BF2;
+$blue-color: #92A3FD;
+
 $default-font: 'Roboto',
 sans-serif,
 Times;
@@ -18,10 +26,20 @@ body {
     font-family: $default-font;
 }
 
+
+html {
+    font-size: 62.5%;
+}
+
+
 .content_container {
     max-width: 1440px;
     margin: 0px auto;
 }
+
+
+@import "second_page.scss"; //импорт файла стилей для второй страницы сайта 
+
 
 // шаблон под медиа запросы для адаптации; используйте по необходимости, исходя из расположения контента)
 @media screen and (max-width: $mobile) {}
