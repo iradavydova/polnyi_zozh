@@ -16,12 +16,15 @@ html {
   display: grid;
   -ms-grid-columns: 5% 40% 55%;
       grid-template-columns: 5% 40% 55%;
-      grid-template-areas: "header main side";
+  -ms-grid-rows: 75% 25%;
+      grid-template-rows: 75% 25%;
+      grid-template-areas: "header main side" "header main pic";
   height: 100vh;
 }
 
 .header-second {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: header;
   background-color: rgba(146, 163, 253, 0.25);
@@ -41,9 +44,31 @@ html {
 
 .main-second {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: main;
   background-color: #F1F1F1;
+}
+
+.theme {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+}
+
+.theme .theme__block {
+  max-width: 10rem;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.theme .theme__block div {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.theme p {
+  font-size: 1rem;
 }
 
 .habit {
@@ -138,13 +163,35 @@ html {
 .calendar {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 5em;
+  margin-left: 5rem;
   width: 80%;
 }
 
 .remind {
   border-radius: 10px;
   background-color: rgba(238, 164, 206, 0.5);
-  margin-left: 5em;
+  margin-left: 5rem;
+  max-width: 30%;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.remind div {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.picture {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: pic;
+  position: relative;
+}
+
+.picture img {
+  max-height: 100%;
+  position: absolute;
+  right: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

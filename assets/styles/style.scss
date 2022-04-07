@@ -40,7 +40,11 @@ html {
 .grid-container {
     display: grid;
     grid-template-columns: 5% 40% 55%;
-    grid-template-areas: "header main side";
+    grid-template-rows: 75% 25%;
+    grid-template-areas: 
+        "header main side"
+        "header main pic";
+    
 
     height: 100vh;
 }
@@ -65,6 +69,28 @@ html {
 .main-second {
     grid-area: main;
     background-color: $grey-color;
+}
+
+.theme {
+    position: sticky;
+    top: 15px;
+
+    .theme__block {
+        max-width: 10rem;
+        margin-left: auto;
+        margin-right: 2rem;
+
+        div {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+    }
+
+
+    p{
+        font-size: 1rem;
+
+    }
 }
 
 .habit {
@@ -160,25 +186,36 @@ html {
 }
 
 .remind {
-        
         border-radius: 10px;
         background-color: $pink-transparent-color;
         margin-left: 5rem;
-        width: 200px;
+        max-width: 30%;
 
-        font-size: 0.;
+        font-size: 1.4rem;
         font-weight: 500;
 
-        img {
-            box-sizing: border-box;
+
+        div {
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 10px;
         }
-        
+
 }
 
-
-.deleteBtn {
+.picture {
+    grid-area: pic;
+    position: relative;
+    img {
+        max-height: 100%;
+        position: absolute;
+        right: 2rem;
+    }
+    
     
 }
+
+
 
 
 // шаблон под медиа запросы для адаптации; используйте по необходимости, исходя из расположения контента)
