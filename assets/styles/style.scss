@@ -13,7 +13,6 @@ $lilac-color:#C58BF2;
 $blue-color: #92A3FD;
 
 
-
 $default-font: 'Roboto',
 sans-serif,
 Times;
@@ -27,6 +26,10 @@ body {
     font-family: $default-font;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 .content_container {
     max-width: 1440px;
     margin: 0px auto;
@@ -34,186 +37,6 @@ body {
 
 @import "second_page.scss"; //импорт файла стилей для второй страницы сайта 
 
-html {
-    font-size: 62.5%;
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: 5% 40% 55%;
-    grid-template-rows: 75% 25%;
-    grid-template-areas: 
-        "header main side"
-        "header main pic";
-    
-
-    height: 100vh;
-}
-
-.header-second {
-    grid-area: header;
-    background-color: $blue-transparent-color;
-
-    &__nav {
-        padding-top: 25px;
-        height: 100%;
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 30px;
-        }
-    }
-}
-
-.main-second {
-    grid-area: main;
-    background-color: $grey-color;
-}
-
-.theme {
-    position: sticky;
-    top: 15px;
-
-    .theme__block {
-        max-width: 10rem;
-        margin-left: auto;
-        margin-right: 2rem;
-
-        div {
-            display: inline-block;
-            margin-right: 1rem;
-        }
-    }
-
-
-    p{
-        font-size: 1rem;
-
-    }
-}
-
-.habit {
-    margin: 4rem auto;
-    width: 80%;
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding-left: 0px;
-        
-    }
-
-    li {
-        border: 1px solid $lightgrey-color;
-        border-radius: 10px;
-        box-sizing: border-box;
-        margin-bottom: 1.5rem;
-        background-color: white;
-        transition: background-color 0.3s linear;
-
-        p {
-            font-size: 1.6rem;
-            font-weight: 500;
-            width: 80%;
-            margin: auto;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        @media (hover: hover) {
-            &:hover,
-            &:active {
-                background-color: $pink-transparent-color;
-                transition: background-color 0.1s linear;
-            }
-        }
-    }
-
-    .new-habit {
-        border: 1px solid $lightgrey-color;
-        border-radius: 10px;
-        box-sizing: border-box;
-        background-color: white;
-    }
-
-    .inputbox {
-        width: 80%;
-        margin: auto;
-        font-size: 1.6rem;
-        margin: auto;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-
-        img {
-            height: 1em;
-        }
-
-        input {
-            margin-left: 5px;
-            width: 80%;
-        }
-    }          
-}
-
-.sideblock {
-    grid-area: side;
-}
-
-.progress {
-    margin: 3rem auto;
-    width: 50%;
-
-    h2 {
-        text-align: center;
-        font-size: 2rem;
-        font-style: italic;
-        font-weight: 500;
-        color: $lilac-color;
-    }
-
-    &__bar {
-        width: 100%;
-        height: 45px;
-    }
-}
-
-.calendar {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 5rem;
-    width: 80%;
-}
-
-.remind {
-        border-radius: 10px;
-        background-color: $pink-transparent-color;
-        margin-left: 5rem;
-        max-width: 30%;
-
-        font-size: 1.4rem;
-        font-weight: 500;
-
-
-        div {
-            display: inline-block;
-            margin-left: 5px;
-            margin-right: 10px;
-        }
-
-}
-
-.picture {
-    grid-area: pic;
-    position: relative;
-    img {
-        max-height: 100%;
-        position: absolute;
-        right: 2rem;
-    }
-    
-    
-}
 
 
 

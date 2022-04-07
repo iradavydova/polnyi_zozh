@@ -2,13 +2,13 @@ body {
   font-family: "Roboto", sans-serif, Times;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .content_container {
   max-width: 1440px;
   margin: 0px auto;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 .grid-container {
