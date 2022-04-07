@@ -138,6 +138,10 @@
         width: 100%;
         height: 45px;
     }
+
+    &::-webkit-progress-value {
+        background-color: $lilac-color;
+    }
 }
 
 .calendar {
@@ -172,3 +176,4 @@
         right: 2rem;
     }  
 }
+

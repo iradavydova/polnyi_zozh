@@ -160,6 +160,10 @@ html {
   height: 45px;
 }
 
+.progress::-webkit-progress-value {
+  background-color: #C58BF2;
+}
+
 .calendar {
   margin-top: 2rem;
   margin-bottom: 2rem;
