@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif, Times;
 }
 
+
 html {
   font-size: 62.5%;
 }
@@ -195,3 +196,9 @@ html {
   right: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
+=======
+.content_container {
+  max-width: 1440px;
+  margin: 0px auto;
+}/*# sourceMappingURL=style.css.map */
+
