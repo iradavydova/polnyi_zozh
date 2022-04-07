@@ -9,7 +9,6 @@ let increaseProgress = function increase() {
         laberBar.innerHTML = myBar.value + '%';
     }
     laberBar.innerHTML = "100%"
-
 } */
 
 let laberBar = document.getElementById('progress-label');
@@ -21,17 +20,16 @@ function increase() {
     
     boxes = markDone.querySelectorAll("input[type='checkbox']:checked");
     checked = boxes.length;
+    console.log(checked);
 
     if (myBar.value < 7) {
-        laberBar.innerHTML = myBar.value + '%';
+        laberBar.innerHTML = ((myBar.value + 1)/7 * 100) + '%';
         myBar.value += 1;
     }
-    laberBar.innerHTML = "100%";
-
-    myBar.value = ((checked / 7) * 100) + "%";
-
+        myBar.value = ((checked / 7) * 100) + "%";
+        laberBar.innerHTML = "100%";
     }
-    
+
     checks = document.querySelectorAll("input[type='checkbox']");
     checks.forEach(function(box) {
     box.addEventListener("change", function(e) {
