@@ -70,6 +70,7 @@ body {
   color: #1D1617;
   font-weight: 500;
   font-size: 16px;
+  border: solid 3px red;
 }
 .output_habit ul .deleteBtn {
   background-color: #fff;
@@ -77,4 +78,5 @@ body {
   display: flex;
   align-self: start;
   padding: 8px 8px;
+  border: solid 3px blue;
 }/*# sourceMappingURL=style.css.map */

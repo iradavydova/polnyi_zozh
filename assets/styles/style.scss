@@ -92,6 +92,7 @@ body {
             color: #1D1617;
             font-weight: 500;
             font-size: 16px;
+            border: solid 3px red;
         }
 
         .deleteBtn {
@@ -100,6 +101,7 @@ body {
             display: flex;
             align-self: start;
             padding: 8px 8px;
+            border: solid 3px blue;
         }
     }
 }

@@ -45,7 +45,9 @@ function liMaker(note) {
     li.textContent = `${note.text} `;
     li.id = 'mynote';
     li.value = note.id;
+    li.setAttribute("onclick", "addContent()");
     li.appendChild(btn);
+    console.log(li)
     list.appendChild(li);
 }
 
@@ -66,6 +68,10 @@ function clearList() {
     itemsArray = [];
     localStorage.removeItem('notesCount');
     notesCount = +1;
+}
+
+function addContent() {
+
 }
 
 addBtn.addEventListener("click", addStuff);
