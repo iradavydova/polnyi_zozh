@@ -88,10 +88,7 @@ function clearList() {
     notesCount = 0;
 }
 
-let markDone = document.getElementById("mark-done");
-
 function addContent(e) {
-    //console.log(e.target.parentElement)
     let div_id = e.target.parentNode.id;
     let week_check = JSON.parse(localStorage.getItem(`${div_id}`));
     let week_keys = Object.keys(week_check);
@@ -101,28 +98,23 @@ function addContent(e) {
         if (week_check[`${day}`] == true) {
             checkbox.type = true;
             checkbox.style.background = 'red';
+            console.log(checkbox)
         }
     }
-    /* 
-        let week_value = [];
-        for (let key in week_check) {
-            week_value += week_check[key];
-        }
-        console.log(week_value)
-        let checkboxes = markDone.querySelectorAll("input");
-        console.log(checkboxes)
-        checkboxes.forEach(item => {
-            item.checked =
-                week_check.
-            console.log(cheeek)
-        }); */
 }
 
 function changeContent(e) {
 
+    localStorage.removeItem('notes');
+    filteredItemsArray = itemsArray.filter((item) => item.id != parent.value);
+    localStorage.setItem('notes', JSON.stringify(filteredItemsArray));
+    localStorage.removeItem(`${parent.value}`);
+    itemsArray = filteredItemsArray;
 }
 
-checks = document.querySelectorAll("input[type='checkbox']");
+let markDone = document.getElementById("mark-done");
+checks = markDone.querySelectorAll("input[type='checkbox']");
+console.log(checks)
 
 checks.forEach(function (box) {
     box.addEventListener("change", function (e) {
