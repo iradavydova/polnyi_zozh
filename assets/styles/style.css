@@ -1,0 +1,338 @@
+body {
+  font-family: "Roboto", sans-serif, Times;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.content_container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 5% 40% 55%;
+  grid-template-rows: 75% 25%;
+  grid-template-areas: "header main side" "header main pic";
+  height: 100vh;
+}
+
+.header-second {
+  grid-area: header;
+  background-color: rgba(146, 163, 253, 0.25);
+}
+.header-second__nav {
+  padding-top: 25px;
+  height: 100%;
+}
+.header-second__nav img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.main-second {
+  grid-area: main;
+  background-color: #F1F1F1;
+}
+
+.theme {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+}
+.theme .theme__block {
+  max-width: 10rem;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+.theme .theme__block div {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.theme p {
+  font-size: 1rem;
+}
+
+.habit {
+  margin: 4rem auto;
+  width: 80%;
+}
+.habit ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0px;
+}
+.habit li {
+  border: 1px solid #E7E8FF;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  transition: background-color 0.3s linear;
+}
+.habit li p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media (hover: hover) {
+  .habit li:hover, .habit li:active {
+    background-color: rgba(238, 164, 206, 0.5);
+    transition: background-color 0.1s linear;
+  }
+}
+.habit .new-habit {
+  border: 1px solid #E7E8FF;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: white;
+}
+.habit .inputbox {
+  width: 80%;
+  margin: auto;
+  font-size: 1.6rem;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.habit .inputbox img {
+  height: 1em;
+}
+.habit .inputbox input {
+  margin-left: 5px;
+  width: 80%;
+}
+
+.sideblock {
+  grid-area: side;
+}
+
+.progress {
+  margin: 3rem auto;
+  width: 50%;
+}
+.progress h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #C58BF2;
+}
+.progress__bar {
+  width: 100%;
+  height: 45px;
+}
+
+.calendar {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 5rem;
+  width: 80%;
+}
+
+.remind {
+  border-radius: 10px;
+  background-color: rgba(238, 164, 206, 0.5);
+  margin-left: 5rem;
+  max-width: 30%;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.remind div {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.picture {
+  grid-area: pic;
+  position: relative;
+}
+.picture img {
+  max-height: 100%;
+  position: absolute;
+  right: 2rem;
+}
+
+.content_container {
+  max-width: 1440px;
+  margin: 0px auto;
+  background: rgba(146, 163, 253, 0.25);
+}
+
+header {
+  align-items: center;
+  padding-top: 2vh;
+  padding-left: 3vw;
+}
+
+.btn_decor > button {
+  color: #2F2E41;
+  background-color: #C58BF2;
+  padding: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 15px;
+  box-shadow: 7px 7px 5px #2F2E41;
+  border-width: 2px;
+  border-color: #2F2E41;
+}
+
+.page_main {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+main > .quote_container {
+  height: 70vh;
+  background: url(/assets/images/man_women_smile.svg) no-repeat;
+  background-size: 95vh auto;
+  background-position: center bottom;
+  text-align: center;
+}
+main > .quote_container p {
+  color: #2F2E41;
+  font-size: 22px;
+  font-weight: 500;
+}
+main > .quote_container #author,
+main > .quote_container .btn_decor {
+  text-align: right;
+}
+main > .quote_container #author {
+  margin-right: 8px;
+}
+
+main > .information {
+  height: 90vh;
+  background: url(/assets/images/heart.svg) no-repeat;
+  background-size: 100vh auto;
+  background-position: right bottom;
+  color: #2F2E41;
+}
+main > .information h1 {
+  text-align: center;
+}
+main > .information h3 {
+  -webkit-margin-after: 2vh;
+          margin-block-end: 2vh;
+}
+main > .information .text,
+main > .information .btn_decor p {
+  font-size: 22px;
+  font-weight: 500;
+}
+main > .information ul {
+  margin-left: 10vw;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+}
+main > .information li {
+  margin-bottom: 10px;
+}
+main > .information li.productivity {
+  list-style-image: url(/assets/images/open-book.png);
+}
+main > .information li.fitness {
+  list-style-image: url(/assets/images/weights.png);
+}
+main > .information li.meditation {
+  list-style-image: url(/assets/images/lotus.png);
+}
+main > .information li.drinking {
+  list-style-image: url(/assets/images/water-bottle.png);
+}
+main > .information li.eating {
+  list-style-image: url(/assets/images/food.svg);
+}
+main > .information li.sleep {
+  list-style-image: url(/assets/images/bed.svg);
+}
+
+footer {
+  height: 15vh;
+  background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
+}
+
+.list_of_habits {
+  display: grid;
+  grid-column: 1fr;
+  grid-row: 6fr 1fr 1fr;
+  align-content: start;
+  grid-gap: 20px;
+  height: 80vh;
+  background: #F2F2F2;
+  padding: 5vh 5vw;
+}
+
+.input_habit {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background: #FFFFFF;
+  padding: 10px;
+  height: 40px;
+  color: #7B6F72;
+}
+.input_habit .addBtn {
+  font-size: 30px;
+  color: #7B6F72;
+  background-color: #fff;
+  border-width: 0px;
+  width: 60px;
+}
+.input_habit .note {
+  width: 100%;
+  border-width: 0px;
+  font-size: 16px;
+}
+
+.clear_all_habits .clearBtn {
+  color: #7B6F72;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 4px 4px 4px #CBCBCB;
+  border-width: 0px;
+  font-size: 16px;
+  height: 56px;
+}
+
+.output_habit div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  margin-bottom: 20px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 16px;
+}
+@media (hover: hover) {
+  .output_habit div:hover .contentBtn, .output_habit div:hover .deleteBtn {
+    background-color: rgba(238, 164, 206, 0.5);
+    transition: background-color 0.1s linear;
+  }
+}
+.output_habit div .contentBtn {
+  background-color: #fff;
+  border-width: 0px;
+  padding: 8px 20px;
+  width: 90%;
+  height: 100%;
+  text-align: start;
+}
+.output_habit div .deleteBtn {
+  background-color: #fff;
+  border-width: 0px;
+  padding: 8px 8px;
+  min-width: 10%;
+  height: 100%;
+  text-align: end;
+}/*# sourceMappingURL=style.css.map */
