@@ -308,7 +308,6 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
   background-color: #fff;
   margin-bottom: 20px;
   height: 60px;
@@ -316,7 +315,7 @@ footer {
   font-size: 16px;
 }
 @media (hover: hover) {
-  .output_habit div:hover, .output_habit div:active {
+  .output_habit div:hover .contentBtn, .output_habit div:hover .deleteBtn {
     background-color: rgba(238, 164, 206, 0.5);
     transition: background-color 0.1s linear;
   }
@@ -324,16 +323,16 @@ footer {
 .output_habit div .contentBtn {
   background-color: #fff;
   border-width: 0px;
-  padding: 8px 8px;
+  padding: 8px 20px;
   width: 90%;
   height: 100%;
-  border: solid 3px blue;
   text-align: start;
 }
 .output_habit div .deleteBtn {
   background-color: #fff;
   border-width: 0px;
-  align-self: start;
   padding: 8px 8px;
-  border: solid 3px blue;
+  min-width: 10%;
+  height: 100%;
+  text-align: end;
 }/*# sourceMappingURL=style.css.map */

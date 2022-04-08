@@ -210,7 +210,6 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-between;
         background-color: #fff;
         margin-bottom: 20px;
         height: 60px;
@@ -219,8 +218,8 @@ footer {
 
         @media (hover: hover) {
 
-            &:hover,
-            &:active {
+            &:hover .contentBtn,
+            &:hover .deleteBtn {
                 background-color: $pink-transparent-color;
                 transition: background-color 0.1s linear;
             }
@@ -229,19 +228,19 @@ footer {
         .contentBtn {
             background-color: #fff;
             border-width: 0px;
-            padding: 8px 8px;
+            padding: 8px 20px;
             width: 90%;
             height: 100%;
-            border: solid 3px blue;
             text-align: start;
         }
 
         .deleteBtn {
             background-color: #fff;
             border-width: 0px;
-            align-self: start;
             padding: 8px 8px;
-            border: solid 3px blue;
+            min-width: 10%;
+            height: 100%;
+            text-align: end;
         }
     }
 }

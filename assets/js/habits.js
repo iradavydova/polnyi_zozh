@@ -27,6 +27,7 @@ itemsArray.forEach(item => {
     liMaker(item);
 });
 
+// добавление привычки в список привычек + ее сохранение в локальное хранилище
 function addStuff() {
     const noteText = noteInput.value;
     if (noteText.length === 0) return;
@@ -68,6 +69,7 @@ function liMaker(note) {
     document.getElementById('list_habit').appendChild(div_note);
 }
 
+// удаление конкретной привычки
 function deleteNote(e) {
     let parent = e.target.parentElement.closest('div');
     parent.remove();
@@ -79,6 +81,7 @@ function deleteNote(e) {
     itemsArray = filteredItemsArray;
 }
 
+// удаление всех привычек из списка
 function clearList() {
     itemsArray.forEach(item => {
         localStorage.removeItem(`${item.id}`);
@@ -88,9 +91,13 @@ function clearList() {
     itemsArray = [];
     localStorage.removeItem('notesCount');
     notesCount = 0;
+    localStorage.removeItem('habitCount');
+    uncheck();
 }
 
+// добавлени значений в чекбоксы по дням недели из локального хранилища
 function addContent(e) {
+    uncheck(); // снимаем все значения с чекбоксов
     let div_id = e.target.parentNode.id;
     let week_check = JSON.parse(localStorage.getItem(`${div_id}`));
     let week_keys = Object.keys(week_check);
@@ -98,46 +105,33 @@ function addContent(e) {
         let day = week_keys[i];
         let checkbox = document.getElementById(day);
         if (week_check[`${day}`] == true) {
-            checkbox.type = true;
-            checkbox.style.background = 'red';
-            console.log(checkbox)
+            checkbox.checked = true;
         }
     }
     localStorage.setItem('habitCount', div_id);
 }
 
-function changeContent(e) {
-    localStorage.removeItem('notes');
-    filteredItemsArray = itemsArray.filter((item) => item.id != parent.value);
-    localStorage.setItem('notes', JSON.stringify(filteredItemsArray));
-    localStorage.removeItem(`${parent.value}`);
-    itemsArray = filteredItemsArray;
+// обновление значений чекбоксов для конкретной привычки в локальном хранилище при нажатии на чекбокс
+function countChecked(e) {
+    let checkbox_id = e.target.id; // день недели
+    let checkbox_checked = e.target.checked; // значение нажатоко чекбокса
+
+    let num_habit = JSON.parse(localStorage.getItem('habitCount')); // id привычки у которой меняем значени
+    let week_check = JSON.parse(localStorage.getItem(`${num_habit}`));
+    localStorage.removeItem(`${num_habit}`);
+    week_check[checkbox_id] = checkbox_checked;
+    console.log(week_check)
+    localStorage.setItem(`${num_habit}`, JSON.stringify(week_check));
 }
 
-function countChecked(e) {
-    let checkbox_id = e.target.id;
-    console.log(checkbox_id)
-    let checkbox_checked = e.target.checked;
-    console.log(checkbox_checked)
-
-    let num_habit = JSON.parse(localStorage.getItem('habitCount'));
-    console.log(num_habit)
-    let week_check = JSON.parse(localStorage.getItem(`${num_habit}`));
-    console.log(week_check.checkbox_id)
-    localStorage.removeItem(`${num_habit}`);
-    for (let i = 0; i < week_keys.length; i++) {
-        let day = week_keys[i];
-        let checkbox = document.getElementById(day);
-        if (week_check[`${day}`] == true) {
-            checkbox.type = true;
-            checkbox.style.background = 'red';
-            console.log(checkbox)
+// снимаем все значения с чекбоксов
+function uncheck() {
+    var uncheck = document.getElementsByTagName('input');
+    for (var i = 0; i < uncheck.length; i++) {
+        if (uncheck[i].type == 'checkbox') {
+            uncheck[i].checked = false;
         }
     }
-    filteredItemsArray = week_check.filter((item) => item.checkbox_id != parent.value);
-    localStorage.setItem('notes', JSON.stringify(filteredItemsArray));
-    localStorage.removeItem(`${parent.value}`);
-    itemsArray = filteredItemsArray;
 }
 
 let markDone = document.querySelectorAll("input[type='checkbox']");
