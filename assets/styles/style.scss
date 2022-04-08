@@ -12,6 +12,9 @@ $pink-transparent-color: rgba(238, 164, 206, 0.5);
 $lightgrey-transparent-color: rgba(242, 242, 242, 0.5);
 $lilac-color:#C58BF2;
 $blue-color: #92A3FD;
+$lavender-color: #C58BF2;
+$blue-color: #2F2E41;
+$gray-color: rgba(146, 163, 253, 0.25);
 
 $default-font: 'Roboto',
 sans-serif,
@@ -39,6 +42,118 @@ html {
 
 
 @import "second_page.scss"; //импорт файла стилей для второй страницы сайта 
+
+.content_container {
+    max-width: 1440px;
+    margin: 0px auto;
+    background: $gray-color;
+}
+
+header {
+    align-items: center;
+    padding-top: 2vh;
+    padding-left: 3vw;
+}
+
+.btn_decor button {
+    color: $blue-color;
+    background-color: $lavender-color;
+    padding: 8px;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 15px;
+    box-shadow: 7px 7px 5px $blue-color;
+    border-width: 2px;
+    border-color: $blue-color;
+}
+
+main {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+main .quote_container {
+    height: 70vh;
+    background: url(/assets/images/man_women_smile.svg) no-repeat;
+    background-size: 95vh auto;
+    background-position: center bottom;
+    text-align: center;
+
+    p {
+        color: $blue-color;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    #author,
+    .btn_decor {
+        text-align: right;
+    }
+
+    #author {
+        margin-right: 8px;
+    }
+}
+
+main .information {
+    height: 90vh;
+    background: url(/assets/images/heart.svg) no-repeat;
+    background-size: 100vh auto;
+    background-position: right bottom;
+    color: $blue-color;
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        margin-block-end: 2vh;
+    }
+
+    .text,
+    .btn_decor p {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    ul {
+        margin-left: 10vw;
+        margin-block-start: 0px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    li.productivity {
+        list-style-image: url(/assets/images/open-book.png);
+    }
+
+    li.fitness {
+        list-style-image: url(/assets/images/weights.png);
+    }
+
+    li.meditation {
+        list-style-image: url(/assets/images/lotus.png);
+    }
+
+    li.drinking {
+        list-style-image: url(/assets/images/water-bottle.png);
+    }
+
+    li.eating {
+        list-style-image: url(/assets/images/food.svg);
+    }
+
+    li.sleep {
+        list-style-image: url(/assets/images/bed.svg);
+    }
+}
+
+footer {
+    height: 15vh;
+    background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
+}
 
 
 // шаблон под медиа запросы для адаптации; используйте по необходимости, исходя из расположения контента)
