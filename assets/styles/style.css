@@ -185,7 +185,7 @@ header {
   border-color: #2F2E41;
 }
 
-main {
+.page_main {
   margin-left: 5vw;
   margin-right: 5vw;
 }
@@ -267,7 +267,6 @@ footer {
   grid-row: 6fr 1fr 1fr;
   align-content: start;
   grid-gap: 20px;
-  max-width: 40%;
   height: 80vh;
   background: #F2F2F2;
   padding: 5vh 5vw;
@@ -305,28 +304,34 @@ footer {
   height: 56px;
 }
 
-.output_habit ul {
-  -webkit-margin-after: 0px;
-          margin-block-end: 0px;
-  margin-left: -40px;
-}
-.output_habit ul li {
+.output_habit div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  list-style: none;
   background-color: #fff;
-  margin-top: 20px;
+  margin-bottom: 20px;
   height: 60px;
-  padding-left: 20px;
-  color: #1D1617;
   font-weight: 500;
   font-size: 16px;
-  border: solid 3px red;
 }
-.output_habit ul .deleteBtn {
+@media (hover: hover) {
+  .output_habit div:hover, .output_habit div:active {
+    background-color: rgba(238, 164, 206, 0.5);
+    transition: background-color 0.1s linear;
+  }
+}
+.output_habit div .contentBtn {
+  background-color: #fff;
+  border-width: 0px;
+  display: flex;
+  padding: 8px 8px;
+  width: 90%;
+  height: 100%;
+  border: solid 3px blue;
+}
+.output_habit div .deleteBtn {
   background-color: #fff;
   border-width: 0px;
   display: flex;

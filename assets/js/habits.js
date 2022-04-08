@@ -61,6 +61,7 @@ function liMaker(note) {
     const div_note = document.createElement('div');
     div_note.id = `${note.id}`;
     div_note.value = note.id;
+    /* div_note.classList.add('style_new_habit') */
     div_note.appendChild(btn_content);
     div_note.appendChild(btn_delete);
     document.getElementById('list_habit').appendChild(div_note);
