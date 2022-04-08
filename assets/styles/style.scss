@@ -55,11 +55,11 @@ header {
     padding-left: 3vw;
 }
 
-.btn_decor button {
+.btn_decor>button {
     color: $blue-color;
     background-color: $lavender-color;
     padding: 8px;
-    font-size: larger;
+    font-size: 22px;
     font-weight: 500;
     border-radius: 15px;
     box-shadow: 7px 7px 5px $blue-color;
@@ -72,7 +72,7 @@ main {
     margin-right: 5vw;
 }
 
-main .quote_container {
+main>.quote_container {
     height: 70vh;
     background: url(/assets/images/man_women_smile.svg) no-repeat;
     background-size: 95vh auto;
@@ -95,7 +95,7 @@ main .quote_container {
     }
 }
 
-main .information {
+main>.information {
     height: 90vh;
     background: url(/assets/images/heart.svg) no-repeat;
     background-size: 100vh auto;

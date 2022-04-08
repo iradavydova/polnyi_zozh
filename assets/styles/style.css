@@ -173,11 +173,11 @@ header {
   padding-left: 3vw;
 }
 
-.btn_decor button {
+.btn_decor > button {
   color: #2F2E41;
   background-color: #C58BF2;
   padding: 8px;
-  font-size: larger;
+  font-size: 22px;
   font-weight: 500;
   border-radius: 15px;
   box-shadow: 7px 7px 5px #2F2E41;
@@ -190,69 +190,69 @@ main {
   margin-right: 5vw;
 }
 
-main .quote_container {
+main > .quote_container {
   height: 70vh;
   background: url(/assets/images/man_women_smile.svg) no-repeat;
   background-size: 95vh auto;
   background-position: center bottom;
   text-align: center;
 }
-main .quote_container p {
+main > .quote_container p {
   color: #2F2E41;
   font-size: 22px;
   font-weight: 500;
 }
-main .quote_container #author,
-main .quote_container .btn_decor {
+main > .quote_container #author,
+main > .quote_container .btn_decor {
   text-align: right;
 }
-main .quote_container #author {
+main > .quote_container #author {
   margin-right: 8px;
 }
 
-main .information {
+main > .information {
   height: 90vh;
   background: url(/assets/images/heart.svg) no-repeat;
   background-size: 100vh auto;
   background-position: right bottom;
   color: #2F2E41;
 }
-main .information h1 {
+main > .information h1 {
   text-align: center;
 }
-main .information h3 {
+main > .information h3 {
   -webkit-margin-after: 2vh;
           margin-block-end: 2vh;
 }
-main .information .text,
-main .information .btn_decor p {
+main > .information .text,
+main > .information .btn_decor p {
   font-size: 22px;
   font-weight: 500;
 }
-main .information ul {
+main > .information ul {
   margin-left: 10vw;
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
 }
-main .information li {
+main > .information li {
   margin-bottom: 10px;
 }
-main .information li.productivity {
+main > .information li.productivity {
   list-style-image: url(/assets/images/open-book.png);
 }
-main .information li.fitness {
+main > .information li.fitness {
   list-style-image: url(/assets/images/weights.png);
 }
-main .information li.meditation {
+main > .information li.meditation {
   list-style-image: url(/assets/images/lotus.png);
 }
-main .information li.drinking {
+main > .information li.drinking {
   list-style-image: url(/assets/images/water-bottle.png);
 }
-main .information li.eating {
+main > .information li.eating {
   list-style-image: url(/assets/images/food.svg);
 }
-main .information li.sleep {
+main > .information li.sleep {
   list-style-image: url(/assets/images/bed.svg);
 }
 
