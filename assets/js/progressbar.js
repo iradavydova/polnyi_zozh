@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+function progressBar() {
 
     let count = 0;
     let checked = 0;
@@ -25,4 +25,4 @@ document.addEventListener('DOMContentLoaded', function () {
     countChecked();
     let marks = document.querySelectorAll('input[type="checkbox"]');
     marks.forEach(item => item.addEventListener('click', countChecked));
-});
+}

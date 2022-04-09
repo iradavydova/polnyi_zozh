@@ -98,6 +98,8 @@ function clearList() {
 // добавлени значений в чекбоксы по дням недели из локального хранилища
 function addContent(e) {
     uncheck(); // снимаем все значения с чекбоксов
+    let bar = document.querySelector(".progress__bar");
+    bar.value = 0; // снимаем все значения с прогресс бара
     let div_id = e.target.parentNode.id;
     let week_check = JSON.parse(localStorage.getItem(`${div_id}`));
     let week_keys = Object.keys(week_check);
@@ -109,6 +111,7 @@ function addContent(e) {
         }
     }
     localStorage.setItem('habitCount', div_id);
+    progressBar()
 }
 
 // обновление значений чекбоксов для конкретной привычки в локальном хранилище при нажатии на чекбокс
