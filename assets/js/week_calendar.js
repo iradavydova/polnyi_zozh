@@ -32,9 +32,10 @@ function load() {
     const day = dt.getDate();
     const month = dt.getMonth();
     const year = dt.getFullYear();
+    console.log(day)
 
     const firstDayOfMonth = new Date(year, month, day);
-    const daysInWeek = new Date(year, month, 7).getDate(); //тут мы добавляем к месяцу 1, смотрим из мая, а день установили 0, значит, это первый день мая - 1, getDate показывает именно последний номер дня
+    const daysInWeek = new Date(year, month, day + 7).getDate(); //тут мы добавляем к месяцу 1, смотрим из мая, а день установили 0, значит, это первый день мая - 1, getDate показывает именно последний номер дня
     console.log(firstDayOfMonth)
     console.log(daysInWeek)
 
@@ -46,7 +47,7 @@ function load() {
     }); //тут мы локализовали отображение даты, я сначала сделала русское, но не смогла дальше разобраться, весь дальнейший код поехал, так что вернула на en
     console.log(dateString)
 
-    const paddingDays = weekdays.indexOf(dateString.split(', ')[0]); //с помощью сплит мы отделяем всё, что находится до запятой перед элементом с индексом 0, то есть перед сегодняшней датой; ', ' у нас является separator, то есть мы по запятой отделили все элементы нашего массива
+    let paddingDays = weekdays.indexOf(dateString.split(', ')[0]); //с помощью сплит мы отделяем всё, что находится до запятой перед элементом с индексом 0, то есть перед сегодняшней датой; ', ' у нас является separator, то есть мы по запятой отделили все элементы нашего массива
     console.log(paddingDays)
 
     document.getElementById('monthDisplay').innerText =
@@ -54,30 +55,30 @@ function load() {
 
     calendar.innerHTML = ''; //смываем всё перед запуском нового цикла
 
-    for (let i = 1; i <= paddingDays + daysInWeek; i++) { // тут мы делаем цикл, начиная с 1 и до того, как доберемся до i <= сумме лишних дней и дней месяца. В итоге мы получаем количество окошек, которые нам надо создать
+    for (let i = 1; i <= 7; i++) { // тут мы делаем цикл, начиная с 1 и до того, как доберемся до i <= сумме лишних дней и дней месяца. В итоге мы получаем количество окошек, которые нам надо создать
         const daySquare = document.createElement('div'); // в каждой итерации создается див 
         daySquare.classList.add('day'); //тут мы добавляем класс day каждому окошку
 
-        const dayString = `${month + 1}/${i - paddingDays}/${year}`;
+        const dayString = `${month}/${day+i}/${year}`;
 
-        if (i > paddingDays) {
-            daySquare.innerText = i - paddingDays; // эта будет цифра в окошке с датой, то есть по сути день даты, но считаем её с помощью вычитания пустых окошек из индекса окошка
-            const eventForDay = events.find(e => e.date === dayString); //ищем все ивенты, чья дата соответствует нашему массиву dayString
-
-            if (eventForDay) {
-                const eventDiv = document.createElement('div');
-                daySquare.classList.add('done'); //меняет цвет дня, если задача выполнена
-                daySquare.append(eventDiv);
-            }
-            if (i - paddingDays === day && nav === 0) { //приписываем id current date окошку с сегодняшней датой, чтобы оно отличалось по цвету
-                daySquare.id = 'currentDay';
-
-            }
-
-            daySquare.addEventListener('click', () => openModal(dayString));
+        if (paddingDays > 0) {
+            daySquare.innerText = day - i;
         } else {
-            daySquare.classList.add('padding'); //тут добавляем класс дням из предыдущего месяца, которые попадают на нашу неделю
+
         }
+        const eventForDay = events.find(e => e.date === dayString); //ищем все ивенты, чья дата соответствует нашему массиву dayString
+
+        if (eventForDay) {
+            const eventDiv = document.createElement('div');
+            daySquare.classList.add('done'); //меняет цвет дня, если задача выполнена
+            daySquare.append(eventDiv);
+        }
+        if (i - paddingDays === day && nav === 0) { //приписываем id current date окошку с сегодняшней датой, чтобы оно отличалось по цвету
+            daySquare.id = 'currentDay';
+
+        }
+
+        daySquare.addEventListener('click', () => openModal(dayString));
 
         calendar.append(daySquare);
     }
