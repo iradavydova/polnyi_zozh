@@ -1,11 +1,4 @@
-body {
-  display: flex;
-  margin-top: 50px;
-  justify-content: center;
-  background-color: #FFFCFF;
-}
-
-button {
+.calendar_month button {
   width: 75px;
   cursor: pointer;
   box-shadow: 0px 0px 2px gray;
@@ -16,7 +9,7 @@ button {
   color: white;
 }
 
-#header {
+.calendar_month #header {
   padding: 10px;
   color: #d36c6c;
   font-size: 26px;
@@ -25,84 +18,83 @@ button {
   justify-content: space-between;
 }
 
-#header button {
+.calendar_month #header button {
   background-color: #92a1d1;
+  font-size: 16px;
 }
 
-#container {
-  width: 770px;
+.calendar_month #container {
+  width: 80%;
+  border: solid 4px red;
 }
 
-#weekdays {
-  width: 100%;
+.calendar_month #weekdays {
+  width: 60%;
   display: flex;
+  justify-content: space-between;
   color: #247BA0;
   text-align: center;
-  font-size: medium;
+  font-size: 16px;
 }
 
-#weekdays div {
-  width: 100px;
+.calendar_month #weekdays div {
+  width: 100%;
   padding: 10px;
 }
 
-#calendar {
+.calendar_month #calendar {
   width: 100%;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-.day {
-  width: 100px;
+.calendar_month .day {
+  width: 70px;
   padding: 10px;
-  height: 100px;
-  border-radius: 100px;
+  height: 70px;
+  border-radius: 70px;
   /* Радиус скругления */
   cursor: pointer;
   box-sizing: border-box;
   background-color: white;
   text-align: center;
-  margin: 5px;
+  margin: 8px;
   box-shadow: 0px 0px 3px #CBD4C2;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.day:hover {
+.calendar_month .day:hover {
   background-color: #e8faed;
 }
 
 
-#currentDay {
+.calendar_month #currentDay {
   background-color: #e8f4fa;
 }
 
-#currentDay.done {
+.calendar_month #currentDay.done {
   background-color: rgb(187, 248, 179);
 
 } 
 
-.done {
-  width: 100px;
+.calendar_month .done {
+  width: 70px;
   padding: 10px;
-  height: 100px;
-  border-radius: 100px;
+  height: 70px;
+  border-radius: 70px;
   /* Радиус скругления */
   cursor: pointer;
   box-sizing: border-box;
   background-color: rgb(187, 248, 179);
   text-align: center;
-  margin: 5px;
+  margin: 8px;
   box-shadow: 0px 0px 3px #CBD4C2;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
 }
 
-.event {
+.calendar_month .event {
   font-size: 10px;
   padding: 3px;
   background-color: #58bae4;
@@ -112,14 +104,14 @@ button {
   overflow: hidden;
 }
 
-.padding {
+.calendar_month .padding {
   cursor: default !important;
   background-color: #FFFCFF !important;
   box-shadow: none !important;
 }
 
-#newEventModal,
-#deleteEventModal {
+.calendar_month #newEventModal,
+.calendar_month #deleteEventModal {
   display: none;
   z-index: 20;
   padding: 25px;
@@ -134,21 +126,21 @@ button {
 
 }
 
-#cancelButton,
-#deleteButton {
+.calendar_month #cancelButton,
+.calendar_month #deleteButton {
   background-color: #d36c6c;
 }
 
-#saveButton,
-#closeButton {
+.calendar_month #saveButton,
+.calendar_month #closeButton {
   background-color: #92a1d1;
 }
 
-#eventText {
+.calendar_month #eventText {
   font-size: 14px;
 }
 
-#modalBackDrop {
+.calendar_month #modalBackDrop {
   display: none;
   top: 0px;
   left: 0px;
