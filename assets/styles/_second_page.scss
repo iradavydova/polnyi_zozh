@@ -135,14 +135,34 @@
     }
 
     &__bar {
+        
         width: 100%;
-        height: 45px;
-    }
+        height: 25px;
+        -webkit-appearance: none;
+        appearance: none;
+        border-radius: 99px;
+        box-shadow: 0px 5px 5px #CBCBCB;
 
-    &::-webkit-progress-value {
-        background-color: $lilac-color;
-    }
+        
+
+        
+    }  
 }
+
+
+progress::-webkit-progress-bar {
+    background-color: #F7F8F8;
+    border-radius: 99px;
+    
+        
+}
+
+progress::-webkit-progress-value {
+    background-color: $lilac-color;
+    border-radius: 99px;
+}
+
+
 
 .calendar {
     margin-top: 2rem;
@@ -153,7 +173,7 @@
 
 .remind {
     border-radius: 10px;
-    background-color: $pink-transparent-color;
+    background: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%);
     margin-left: 5rem;
     max-width: 30%;
 

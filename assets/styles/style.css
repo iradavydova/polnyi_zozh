@@ -15,10 +15,11 @@ html {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 5% 40% 55%;
-      grid-template-columns: 5% 40% 55%;
+  grid-template-columns: 5% 40% 55%;
   -ms-grid-rows: 75% 25%;
-      grid-template-rows: 75% 25%;
-      grid-template-areas: "header main side" "header main pic";
+  grid-template-rows: 75% 25%;
+  grid-template-areas: "header main side"
+  "header main pic";
   height: 100vh;
 }
 
@@ -86,7 +87,7 @@ html {
   border: 1px solid #E7E8FF;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-bottom: 1.5rem;
   background-color: white;
   -webkit-transition: background-color 0.3s linear;
@@ -103,7 +104,9 @@ html {
 }
 
 @media (hover: hover) {
-  .habit li:hover, .habit li:active {
+
+  .habit li:hover,
+  .habit li:active {
     background-color: rgba(238, 164, 206, 0.5);
     -webkit-transition: background-color 0.1s linear;
     transition: background-color 0.1s linear;
@@ -114,7 +117,7 @@ html {
   border: 1px solid #E7E8FF;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white;
 }
 
@@ -157,11 +160,23 @@ html {
 
 .progress__bar {
   width: 100%;
-  height: 45px;
+  height: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 99px;
+  -webkit-box-shadow: 0px 5px 5px #CBCBCB;
+  box-shadow: 0px 5px 5px #CBCBCB;
 }
 
-.progress::-webkit-progress-value {
-  background-color: #C58BF2;
+progress::-webkit-progress-bar {
+  background-color: #F7F8F8;
+  border-radius: 99px;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%);
+  border-radius: 99px;
 }
 
 .calendar {
@@ -198,4 +213,5 @@ html {
   position: absolute;
   right: 2rem;
 }
+
 /*# sourceMappingURL=style.css.map */
