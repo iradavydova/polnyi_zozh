@@ -6,7 +6,7 @@ const calendar = document.getElementById('calendar');
 const newEventModal = document.getElementById('newEventModal');
 const deleteEventModal = document.getElementById('deleteEventModal');
 const backDrop = document.getElementById('modalBackDrop');
-const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday','Sunday']; //порядок дней важен, так как мы будем использовать их индексы далее
+const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']; //порядок дней важен, так как мы будем использовать их индексы далее
 
 function openModal(date) {
   clicked = date;
@@ -18,7 +18,7 @@ function openModal(date) {
   } else {
     newEventModal.style.display = 'block';
   }
-    backDrop.style.display = 'block';
+  backDrop.style.display = 'block';
 }
 
 function load() {
@@ -34,7 +34,7 @@ function load() {
 
   const firstDayOfMonth = new Date(year, month, 1);
   const daysInMonth = new Date(year, month + 1, 0).getDate(); //тут мы добавляем к месяцу 1, смотрим из мая, а день установили 0, значит, это первый день мая - 1, getDate показывает именно последний номер дня
-  
+
   const dateString = firstDayOfMonth.toLocaleDateString('en-us', {
     weekday: 'long',
     year: 'numeric',
@@ -44,12 +44,12 @@ function load() {
 
   const paddingDays = weekdays.indexOf(dateString.split(', ')[0]); //с помощью сплит мы отделяем всё, что находится до запятой перед элементом с индексом 0, то есть перед сегодняшней датой; ', ' у нас является separator, то есть мы по запятой отделили все элементы нашего массива
 
-  document.getElementById('monthDisplay').innerText = 
+  document.getElementById('monthDisplay').innerText =
     `${dt.toLocaleDateString('ru-RU', { month: 'long' })} ${year}`; // добавить в хэдер месяц и год, тут тоже локализовала, но уже на русский и это ничего не сбило и отобразился месяц на русском
 
   calendar.innerHTML = ''; //смываем всё перед запуском нового цикла
 
-  for(let i = 1; i <= paddingDays + daysInMonth; i++) { // тут мы делаем цикл, начиная с 1 и до того, как доберемся до i <= сумме лишних дней и дней месяца. В итоге мы получаем количество окошек, которые нам надо создать
+  for (let i = 1; i <= paddingDays + daysInMonth; i++) { // тут мы делаем цикл, начиная с 1 и до того, как доберемся до i <= сумме лишних дней и дней месяца. В итоге мы получаем количество окошек, которые нам надо создать
     const daySquare = document.createElement('div'); // в каждой итерации создается див 
     daySquare.classList.add('day'); //тут мы добавляем класс day каждому окошку
 
@@ -66,7 +66,7 @@ function load() {
       }
       if (i - paddingDays === day && nav === 0) { //приписываем id current date окошку с сегодняшней датой, чтобы оно отличалось по цвету
         daySquare.id = 'currentDay';
-        
+
       }
 
       daySquare.addEventListener('click', () => openModal(dayString));
@@ -87,13 +87,13 @@ function closeModal() {
 }
 
 function saveEvent() { //при нажатии кнопки saveButton, мы добавляем ивент в массив ивентс, а также сохраняем его в локальное хранилище
-     events.push({
-      date: clicked,
-    });
-    localStorage.setItem('events', JSON.stringify(events));
-    closeModal();
+  events.push({
+    date: clicked,
+  });
+  localStorage.setItem('events', JSON.stringify(events));
+  closeModal();
 
-  } 
+}
 
 
 function deleteEvent() {

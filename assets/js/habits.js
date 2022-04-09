@@ -112,7 +112,7 @@ function addContent(e) {
 }
 
 // обновление значений чекбоксов для конкретной привычки в локальном хранилище при нажатии на чекбокс
-function countChecked(e) {
+function changeCheckbox(e) {
     let checkbox_id = e.target.id; // день недели
     let checkbox_checked = e.target.checked; // значение нажатоко чекбокса
 
@@ -134,8 +134,8 @@ function uncheck() {
     }
 }
 
-let markDone = document.querySelectorAll("input[type='checkbox']");
-markDone.forEach(item => item.addEventListener("click", (e) => countChecked(e)));
+let allcheckbox = document.querySelectorAll("input[type='checkbox']");
+allcheckbox.forEach(item => item.addEventListener("click", (e) => changeCheckbox(e)));
 
 addBtn.addEventListener("click", addStuff);
 clearBtn.addEventListener("click", clearList);
