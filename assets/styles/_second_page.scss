@@ -1,12 +1,11 @@
-
 .grid-container {
     display: grid;
     grid-template-columns: 5% 40% 55%;
     grid-template-rows: 75% 25%;
-    grid-template-areas: 
+    grid-template-areas:
         "header main side"
         "header main pic";
-    
+
 
     height: 100vh;
 }
@@ -49,7 +48,7 @@
     }
 
 
-    p{
+    p {
         font-size: 1rem;
 
     }
@@ -63,7 +62,7 @@
         list-style-type: none;
         margin: 0;
         padding-left: 0px;
-        
+
     }
 
     li {
@@ -84,6 +83,7 @@
         }
 
         @media (hover: hover) {
+
             &:hover,
             &:active {
                 background-color: $pink-transparent-color;
@@ -115,7 +115,7 @@
             margin-left: 5px;
             width: 80%;
         }
-    }          
+    }
 }
 
 .sideblock {
@@ -148,28 +148,28 @@
 }
 
 .remind {
-        border-radius: 10px;
-        background-color: $pink-transparent-color;
-        margin-left: 5rem;
-        max-width: 30%;
+    border-radius: 10px;
+    background-color: $pink-transparent-color;
+    margin-left: 5rem;
+    max-width: 30%;
 
-        font-size: 1.4rem;
-        font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 500;
 
-        div {
-            display: inline-block;
-            margin-left: 5px;
-            margin-right: 10px;
-        }
+    div {
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
 }
 
 .picture {
     grid-area: pic;
     position: relative;
+
     img {
         max-height: 100%;
         position: absolute;
         right: 2rem;
-    }  
+    }
 }
-
