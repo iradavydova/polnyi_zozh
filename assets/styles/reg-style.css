@@ -19,42 +19,33 @@ body {
   margin-right: auto;
   width: 30em;
 }
-
 .registration .main-checkbox {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.2fr 2fr;
-      grid-template-columns: 0.2fr 2fr;
+  grid-template-columns: 0.2fr 2fr;
   text-align: start;
 }
-
 .registration .say_hi {
   font-size: 20px;
-  color: #3f3d56;
+  color: rgb(63, 61, 86);
   margin-top: 79px;
   margin-bottom: 33.76px;
 }
-
 .registration .form-control {
   margin-bottom: 22px;
-  background-color: #f7f8f8;
+  background-color: rgb(247, 248, 248);
   height: 48.81px;
   border-radius: 14px;
 }
-
 .registration #checkbox1 {
-  height: 16.27118682861328px;
-  width: 16.761903762817383px;
+  height: 16.2711868286px;
+  width: 16.7619037628px;
 }
-
 .registration .main-checkbox {
   margin-bottom: 33px;
 }
-
 .registration .text-xs-center {
   margin-bottom: 21px;
 }
-
 .registration .button {
   text-decoration: none;
   border-width: 0px;
@@ -64,35 +55,25 @@ body {
   padding-right: 80px;
   border-radius: 99px;
   color: white;
-  background-color: #034c65;
+  background-color: rgb(3, 76, 101);
   font-size: 16px;
-  -webkit-box-shadow: 5px 5px 5px darkgrey;
-          box-shadow: 5px 5px 5px darkgrey;
+  box-shadow: 5px 5px 5px darkgrey;
 }
-
 .registration .ili1 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 0.2fr 1fr;
-      grid-template-columns: 1fr 0.2fr 1fr;
+  grid-template-columns: 1fr 0.2fr 1fr;
 }
-
 .registration .ili {
   margin-top: 7px;
   font-size: 12px;
   padding: 0 10px;
 }
-
 .registration .btn_google_facebook {
-  display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
   margin-top: 30px;
 }
-
 .registration .btn1 {
   border-radius: 14px;
   text-decoration: none;
@@ -101,30 +82,23 @@ body {
   background-color: white;
   padding: 20px;
 }
-
 .registration .btn1:hover {
   border: 0.8px solid #DDDADA;
 }
-
 .registration .account {
   margin-top: 33px;
 }
-
 .registration .soglasie {
   font-size: 11px;
-  color: #ada4a5;
+  color: rgb(173, 164, 165);
 }
-
 .registration .ssilka {
   text-decoration: none;
-  color: #ada4a5;
+  color: rgb(173, 164, 165);
 }
-
 .registration .ssilka:hover {
   text-decoration: underline;
 }
-
 .registration .exit {
-  color: #ff006a;
-}
-/*# sourceMappingURL=reg-style.css.map */
+  color: rgb(255, 0, 106);
+}/*# sourceMappingURL=reg-style.css.map */
