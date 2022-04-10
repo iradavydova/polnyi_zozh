@@ -98,6 +98,8 @@ function clearList() {
 // добавлени значений в чекбоксы по дням недели из локального хранилища
 function addContent(e) {
     uncheck(); // снимаем все значения с чекбоксов
+    let bar = document.querySelector(".progress__bar");
+    bar.value = 0; // снимаем все значения с прогресс бара
     let div_id = e.target.parentNode.id;
     let week_check = JSON.parse(localStorage.getItem(`${div_id}`));
     let week_keys = Object.keys(week_check);
@@ -109,10 +111,11 @@ function addContent(e) {
         }
     }
     localStorage.setItem('habitCount', div_id);
+    progressBar()
 }
 
 // обновление значений чекбоксов для конкретной привычки в локальном хранилище при нажатии на чекбокс
-function countChecked(e) {
+function changeCheckbox(e) {
     let checkbox_id = e.target.id; // день недели
     let checkbox_checked = e.target.checked; // значение нажатоко чекбокса
 
@@ -134,8 +137,8 @@ function uncheck() {
     }
 }
 
-let markDone = document.querySelectorAll("input[type='checkbox']");
-markDone.forEach(item => item.addEventListener("click", (e) => countChecked(e)));
+let allcheckbox = document.querySelectorAll("input[type='checkbox']");
+allcheckbox.forEach(item => item.addEventListener("click", (e) => changeCheckbox(e)));
 
 addBtn.addEventListener("click", addStuff);
 clearBtn.addEventListener("click", clearList);
