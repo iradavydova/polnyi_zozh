@@ -23,12 +23,12 @@
 
 <body>
     <div class="all_registration">
-        <form class="registration">
+        <form class="registration" action="" method="POST">
             
                 <legend class="say_hi"> <b>Добро пожаловать!</b> </legend>
                 <div class="registration_page">
                     <span class="nameofstroka">
-                        <input class="form-control" id="login" type="text" placeholder="Имя" required />
+                        <input class="form-control" id="login" type="text" placeholder="Имя" autofocus required />
                     </span>
                 </div>
                 <div class="registration_page">
@@ -57,7 +57,7 @@
                         </label>
                     </div>
                     <div class="btn2">
-                        <p><button class="button" type="submit" onclick=checkAll()> <b>Зарегистрироваться</b> </button>
+                         <p><button class="button" type="submit" onclick="checkAll(event)"> <b>Зарегистрироваться</b> </button> 
                         </p>
                     </div>
                     <div id="errorsInfo"></div>

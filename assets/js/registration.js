@@ -6,7 +6,8 @@ function checkValidity(input) {
     if (validity.tooShort) {errors.push('Длина пароля должна быть больше 8 символов')}
 }
 
-function checkAll() {
+function checkAll(event) {
+    event.preventDefault();
     errors = [];
     let inputs = document.querySelectorAll("input");
     let privacy_check = document.getElementById('checkbox1');
@@ -18,6 +19,24 @@ function checkAll() {
     if (privacy_check.checked == false) {errors.push ('Подтвердите принятие условий.')}
     
     document.getElementById('errorsInfo').innerHTML=errors.join('. <br>');
-}
 
-//form.addEventListener('submit', checkAll());
+    let username = document.getElementById('login').value;
+    if(localStorage.getItem('name')==null) {
+        localStorage.setItem('name', username);
+    }
+
+    if(errors.length == '') {
+        window.location.href = "main.html";
+    }
+};
+
+/* для следующей страницы: при загрузке страницы проверяет, есть ли сохраненное имя в лок.хран.
+document.addEventListener("DOMContentLoaded", function(event) {
+    let name = localStorage.getItem('name');
+    if(name != null) {
+        document.getElementById('login').value = name;
+    }
+});*/
+
+//const form = document.querySelector('form');
+//form.addEventListener('submit', checkAll);
