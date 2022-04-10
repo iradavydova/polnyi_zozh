@@ -5,25 +5,13 @@ $lightgrey-color: #E7E8FF;
 $purple-color: #3F3D56;
 $aqua-color: #034C65;
 $blue-color: #2F2E41;
-
-
 $grey-color: #F1F1F1;
-$blue-transparent-color: rgba(146, 163, 253, 0.25);
-$pink-transparent-color: rgba(238, 164, 206, 0.5);
-$lightgrey-transparent-color: rgba(242, 242, 242, 0.5);
-$lilac-color:#C58BF2;
-$blue-color: #92A3FD;
 $lavender-color: #C58BF2;
-$blue-color: #2F2E41;
-$gray-color: rgba(146, 163, 253, 0.25);
 
-
-$grey-color: #F1F1F1;
 $blue-transparent-color: rgba(146, 163, 253, 0.25);
 $pink-transparent-color: rgba(238, 164, 206, 0.5);
 $lightgrey-transparent-color: rgba(242, 242, 242, 0.5);
-$lilac-color:#C58BF2;
-$blue-color: #92A3FD;
+
 
 $default-font: 'Roboto',
 sans-serif,
@@ -52,10 +40,10 @@ html {
 
 @import "second_page.scss"; //импорт файла стилей для второй страницы сайта 
 
-.content_container {
-    max-width: 1440px;
-    margin: 0px auto;
-    background: $gray-color;
+
+.header__main {
+    height: 15vh;
+    background-color: $lavender-color;
 }
 
 .logo {
@@ -83,19 +71,13 @@ html {
     
 }
 
-.page_main {
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
 
 .quote-container {
-    height: 70vh;
-    //background: url(/assets/images/man_women_smile.svg) no-repeat;
-    //background-size: 95vh auto;
-    //background-position: center bottom;
+    
+    
     text-align: center;
-    max-height: 50%;
-    margin-bottom: 2rem;
+    
+    margin-bottom: 5rem;
 
     .quote {
         width: 80%;
@@ -129,10 +111,12 @@ html {
 }
 
 main>.information {
-    height: 90vh;
-    background: url(/assets/images/heart.svg) no-repeat;
-    background-size: 100vh auto;
-    background-position: right bottom;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5rem;
+    //background: url(/assets/images/heart.svg) no-repeat;
+    //background-size: 100vh auto;
+    //background-position: right bottom;
     color: $blue-color;
 
     h1 {
@@ -145,8 +129,9 @@ main>.information {
 
     .text,
     .btn_decor p {
-        font-size: 22px;
-        font-weight: 500;
+        font-size: 2em;
+        font-weight: 400;
+
     }
 
     ul {
@@ -185,7 +170,7 @@ main>.information {
 
 footer {
     height: 15vh;
-    background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
+    background: $lavender-color;
 }
 
 

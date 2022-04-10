@@ -235,16 +235,9 @@ html {
   border-color: #92A3FD;
 }
 
-.page_main {
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-
 .quote-container {
-  height: 70vh;
   text-align: center;
-  max-height: 50%;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 .quote-container .quote {
@@ -278,10 +271,9 @@ html {
 }
 
 main > .information {
-  height: 90vh;
-  background: url(/assets/images/heart.svg) no-repeat;
-  background-size: 100vh auto;
-  background-position: right bottom;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5rem;
   color: #92A3FD;
 }
 
@@ -296,8 +288,8 @@ main > .information h3 {
 
 main > .information .text,
 main > .information .btn_decor p {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 2em;
+  font-weight: 400;
 }
 
 main > .information ul {
