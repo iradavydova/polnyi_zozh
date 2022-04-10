@@ -36,6 +36,7 @@ function checkAll(event) {
 
     if (errors.length == '') {
         window.location.href = "second_page.html";
+        localStorage.clear();
     }
 };
 
