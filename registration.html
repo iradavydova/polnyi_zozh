@@ -24,84 +24,77 @@
 <body>
     <div class="all_registration">
         <form class="registration" action="" method="POST">
-            
-                <legend class="say_hi"> <b>Добро пожаловать!</b> </legend>
-                <div class="registration_page">
-                    <span class="nameofstroka">
-                        <input class="form-control" id="login" type="text" placeholder="Имя" autofocus required />
-                    </span>
-                </div>
-                <div class="registration_page">
-                    <span class="nameofstroka">
-                        <input class="form-control" id="email" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" required />
-                    </span>
-                </div>
-                <div class="registration_page">
-                    <span class="nameofstroka">
-                        <input class="form-control" id="password" type="password" placeholder="Пароль" minlength="8" required />
-                    </span>
-                </div>
 
-                <div class="form-group">
-                    <div class="main-checkbox">
-                        <div class="knopka"> <input type="checkbox" value="none" id="checkbox1" name="check">
-                            <label for="checkbox1"></label>
-                        </div>
-                        <div class="soglasie_slova">
-                            <p class="soglasie">By continuing you accept our <a class="ssilka" href="#">Privacy
-                                    Policy</a>
-                                and
-                                <a class="ssilka" href="#">Term of Use</a>
-                            </p>
-                        </div>
-                        </label>
+            <legend class="say_hi"> <b>Добро пожаловать!</b> </legend>
+            <div class="registration_page">
+                <span class="nameofstroka">
+                    <input class="form-control" id="login" type="text" placeholder="Имя" autofocus required />
+                </span>
+            </div>
+            <div class="registration_page">
+                <span class="nameofstroka">
+                    <input class="form-control" id="email" type="email" placeholder="Email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" required />
+                </span>
+            </div>
+            <div class="registration_page">
+                <span class="nameofstroka">
+                    <input class="form-control" id="password" type="password" placeholder="Пароль" minlength="8"
+                        required />
+                </span>
+            </div>
+
+            <div class="form-group">
+                <div class="main-checkbox">
+                    <div class="knopka"> <input type="checkbox" value="none" id="checkbox1" name="check">
+                        <label for="checkbox1"></label>
                     </div>
-                    <div class="btn2">
-                         <p><button class="button" type="submit" onclick="checkAll(event)"> <b>Зарегистрироваться</b> </button> 
+                    <div class="soglasie_slova">
+                        <p class="soglasie">By continuing you accept our <a class="ssilka" href="#">Privacy
+                                Policy</a>
+                            and
+                            <a class="ssilka" href="#">Term of Use</a>
                         </p>
                     </div>
-                    <div id="errorsInfo"></div>
-                    <div class="ili1">
-                        <div class="leftline">
-                            <hr>
-                        </div>
-                        <h2 class="ili"> Или </h2>
-                        <div class="rightline">
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="btn_google_facebook">
-                        <div class="google">
-                            <button class="btn1">
-                                <a href="https://myaccount.google.com/">
-                                    <img src="assets/images/google-logo.png" alt="Кнопка «гугл»">
-                                </a>
-                            </button>
-                        </div>
-                        <div class="facebook">
-                            <button class="btn1">
-                                <a href="https://www.facebook.com/">
-                                    <img src="assets/images/logo facebook.png" alt="Кнопка «фейсбук»">
-                                </a>
-                            </button>
-                        </div>
-                    </div>
-                    <p class="account"><b>Уже есть аккаунт? </b><a class="exit" href="#">Войти</a>
+                    </label>
+                </div>
+                <div class="btn2">
+                    <p><button class="button" type="submit" onclick="checkAll(event)"> <b>Зарегистрироваться</b>
+                        </button>
                     </p>
-            
+                </div>
+                <div id="errorsInfo"></div>
+                <div class="ili1">
+                    <div class="leftline">
+                        <hr>
+                    </div>
+                    <h2 class="ili"> Или </h2>
+                    <div class="rightline">
+                        <hr>
+                    </div>
+                </div>
+                <div class="btn_google_facebook">
+                    <div class="google">
+                        <button class="btn1">
+                            <a href="https://myaccount.google.com/">
+                                <img src="assets/images/google-logo.png" alt="Кнопка «гугл»">
+                            </a>
+                        </button>
+                    </div>
+                    <div class="facebook">
+                        <button class="btn1">
+                            <a href="https://www.facebook.com/">
+                                <img src="assets/images/logo facebook.png" alt="Кнопка «фейсбук»">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <p class="account"><b>Уже есть аккаунт? </b><a class="exit" href="#">Войти</a>
+                </p>
+
         </form>
     </div>
-
-    <header class="content_container">
-
-    </header>
-    <main class="content_container">
-
-    </main>
-    <footer class="content_container">
-
-    </footer>
-    <script src="assets/js/registration.js"></script>
+    <script src="/assets/js/registration.js"></script>
 </body>
 
 </html>

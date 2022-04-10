@@ -1,9 +1,16 @@
 let errors = [];
+
 function checkValidity(input) {
     let validity = input.validity;
-    if (validity.valueMissing) { errors.push('Пожалуйста, введите ' + input.placeholder); }
-    if (validity.patternMismatch) { errors.push('Введите корректный email-адрес');}
-    if (validity.tooShort) {errors.push('Длина пароля должна быть больше 8 символов')}
+    if (validity.valueMissing) {
+        errors.push('Пожалуйста, введите ' + input.placeholder);
+    }
+    if (validity.patternMismatch) {
+        errors.push('Введите корректный email-адрес');
+    }
+    if (validity.tooShort) {
+        errors.push('Длина пароля должна быть больше 8 символов')
+    }
 }
 
 function checkAll(event) {
@@ -16,17 +23,19 @@ function checkAll(event) {
         checkValidity(input);
     }
 
-    if (privacy_check.checked == false) {errors.push ('Подтвердите принятие условий.')}
-    
-    document.getElementById('errorsInfo').innerHTML=errors.join('. <br>');
+    if (privacy_check.checked == false) {
+        errors.push('Подтвердите принятие условий.')
+    }
+
+    document.getElementById('errorsInfo').innerHTML = errors.join('. <br>');
 
     let username = document.getElementById('login').value;
-    if(localStorage.getItem('name')==null) {
+    if (localStorage.getItem('name') == null) {
         localStorage.setItem('name', username);
     }
 
-    if(errors.length == '') {
-        window.location.href = "main.html";
+    if (errors.length == '') {
+        window.location.href = "second_page.html";
     }
 };
 

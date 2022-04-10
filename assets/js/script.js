@@ -68,3 +68,7 @@ function randomQuote() {
 
 }
 randomQuote();
+
+function signUp() {
+    location.href = 'registration.html';
+}
