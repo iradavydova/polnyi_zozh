@@ -1,0 +1,130 @@
+body {
+  font-family: "Roboto", sans-serif, Times;
+}
+
+.content_container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.registration {
+  text-align: center;
+  border: 3px solid #F7F8F8;
+  border-radius: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
+}
+
+.registration .main-checkbox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 2fr;
+      grid-template-columns: 0.2fr 2fr;
+  text-align: start;
+}
+
+.registration .say_hi {
+  font-size: 20px;
+  color: #3f3d56;
+  margin-top: 79px;
+  margin-bottom: 33.76px;
+}
+
+.registration .form-control {
+  margin-bottom: 22px;
+  background-color: #f7f8f8;
+  height: 48.81px;
+  border-radius: 14px;
+}
+
+.registration #checkbox1 {
+  height: 16.27118682861328px;
+  width: 16.761903762817383px;
+}
+
+.registration .main-checkbox {
+  margin-bottom: 33px;
+}
+
+.registration .text-xs-center {
+  margin-bottom: 21px;
+}
+
+.registration .button {
+  text-decoration: none;
+  border-width: 0px;
+  outline: none;
+  padding: 18px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-radius: 99px;
+  color: white;
+  background-color: #034c65;
+  font-size: 16px;
+  -webkit-box-shadow: 5px 5px 5px darkgrey;
+          box-shadow: 5px 5px 5px darkgrey;
+}
+
+.registration .ili1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.2fr 1fr;
+      grid-template-columns: 1fr 0.2fr 1fr;
+}
+
+.registration .ili {
+  margin-top: 7px;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.registration .btn_google_facebook {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+}
+
+.registration .btn1 {
+  border-radius: 14px;
+  text-decoration: none;
+  border-width: 0px;
+  outline: none;
+  background-color: white;
+  padding: 20px;
+}
+
+.registration .btn1:hover {
+  border: 0.8px solid #DDDADA;
+}
+
+.registration .account {
+  margin-top: 33px;
+}
+
+.registration .soglasie {
+  font-size: 11px;
+  color: #ada4a5;
+}
+
+.registration .ssilka {
+  text-decoration: none;
+  color: #ada4a5;
+}
+
+.registration .ssilka:hover {
+  text-decoration: underline;
+}
+
+.registration .exit {
+  color: #ff006a;
+}
+/*# sourceMappingURL=reg-style.css.map */
