@@ -217,12 +217,15 @@ progress::-webkit-progress-value {
   background: rgba(146, 163, 253, 0.25);
 }
 
-header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.logo {
+  width: 15%;
   padding-top: 2vh;
   padding-left: 3vw;
+}
+
+.logo svg {
+  width: 100%;
+  height: 100%;
 }
 
 .btn_decor > button {
@@ -243,27 +246,41 @@ header {
   margin-right: 5vw;
 }
 
-main > .quote_container {
+.quote-container {
   height: 70vh;
-  background: url(/assets/images/man_women_smile.svg) no-repeat;
-  background-size: 95vh auto;
-  background-position: center bottom;
   text-align: center;
+  max-height: 50%;
+  margin-bottom: 2rem;
 }
 
-main > .quote_container p {
+.quote-container .quote {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.quote-container p {
   color: #2F2E41;
   font-size: 22px;
   font-weight: 500;
 }
 
-main > .quote_container #author,
-main > .quote_container .btn_decor {
+.quote-container #author,
+.quote-container .btn_decor {
   text-align: right;
 }
 
-main > .quote_container #author {
+.quote-container #author {
   margin-right: 8px;
+}
+
+.quote-container .quote-img {
+  width: 80%;
+  margin: auto;
+}
+
+.quote-container .quote-img img {
+  width: 100%;
 }
 
 main > .information {
