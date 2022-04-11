@@ -17,7 +17,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
     <div class="grid-container content_container">
 
         <header class="header-second">
@@ -54,20 +54,12 @@
 
         <section class="sideblock">
             <div class="theme">
-                <div class="theme__block">
-                    <div class="theme_light">
-                        <p>светлая</p>
-                        <a href="#">
-                            <img src="assets/img/sun-icon.svg" alt="светлая">
-                        </a>
-                    </div>
                     <div class="theme_dark">
                         <p>тёмная</p>
-                        <button class="btn-toggle" id="btn-toggle">
+                        <button onclick="themeButton()" class="theme-button" id="theme-button">
                             <img src="assets/img/moon-icon.svg" alt="тёмная">
                         </button>
-                    </div>
-                </div>
+            </div>
             </div>
 
             <div class="progress">
@@ -101,20 +93,21 @@
         <div class="picture">
             <img src="assets/img/celebration.svg" alt="успех">
         </div>
-    </div>
+    
 
     <script src="/assets/js/habits.js"></script>
     <script src="/assets/js/progressbar.js"></script>
     <script>
         // Выбираем кнопку
-        const btn = document.getElementById('btn-toggle');
         // Отслеживаем щелчок по кнопке
-        btn.addEventListener('click', function () {
-            // Затем переключаем (добавляем/удаляем) класс .dark-theme для body
-            /* document.body.classList.add('dark-theme'); */
-            document.body.className = 'dark-theme'
-        })
+
+function themeButton() {
+    let body = document.getElementById('body');
+    body.classList.toggle("dark-theme");
+};
+
     </script>
+    </div>
 </body>
 
 </html>
