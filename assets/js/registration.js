@@ -30,13 +30,13 @@ function checkAll(event) {
     document.getElementById('errorsInfo').innerHTML = errors.join('. <br>');
 
     let username = document.getElementById('login').value;
-    if (localStorage.getItem('name') == null) {
-        localStorage.setItem('name', username);
-    }
+    localStorage.setItem('name', JSON.stringify(username));
+
 
     if (errors.length == '') {
         window.location.href = "second_page.html";
-        localStorage.clear();
+        localStorage.removeItem('notesCount');
+        localStorage.removeItem('habitCount');
     }
 };
 
