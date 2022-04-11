@@ -26,13 +26,13 @@ body {
 }
 .registration .say_hi {
   font-size: 20px;
-  color: #3f3d56;
+  color: rgb(63, 61, 86);
   margin-top: 79px;
   margin-bottom: 33.76px;
 }
 .registration .form-control {
   margin-bottom: 22px;
-  background-color: #f7f8f8;
+  background-color: rgb(247, 248, 248);
   height: 48.81px;
   border-radius: 14px;
 }
@@ -55,7 +55,7 @@ body {
   padding-right: 80px;
   border-radius: 99px;
   color: white;
-  background-color: #034c65;
+  background-color: rgb(3, 76, 101);
   font-size: 16px;
   box-shadow: 5px 5px 5px darkgrey;
 }
@@ -90,15 +90,15 @@ body {
 }
 .registration .soglasie {
   font-size: 11px;
-  color: #ada4a5;
+  color: rgb(173, 164, 165);
 }
 .registration .ssilka {
   text-decoration: none;
-  color: #ada4a5;
+  color: rgb(173, 164, 165);
 }
 .registration .ssilka:hover {
   text-decoration: underline;
 }
 .registration .exit {
-  color: #ff006a;
+  color: rgb(255, 0, 106);
 }/*# sourceMappingURL=reg-style.css.map */

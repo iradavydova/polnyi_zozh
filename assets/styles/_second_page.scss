@@ -51,7 +51,7 @@
 
 .main-second .dark-theme {
     grid-area: main;
-    background-color: $rgb(44, 46, 48);
+    background-color: rgb(44, 46, 48);
 }
 
 .theme {
@@ -114,33 +114,10 @@
         }
     }
 
-    .habit .dark-theme {
-        margin: 4rem auto;
-        width: 80%;
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding-left: 0px;
-
-        }
-
+    & .dark-theme {
         li {
             border: 1px solid $darkgrey-color;
-            border-radius: 10px;
-            box-sizing: border-box;
-            margin-bottom: 1.5rem;
             background-color: rgb(95, 91, 91);
-            transition: background-color 0.3s linear;
-
-            p {
-                font-size: 1.6rem;
-                font-weight: 500;
-                width: 80%;
-                margin: auto;
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-            }
 
             @media (hover: hover) {
 
@@ -244,3 +221,22 @@
             right: 2rem;
         }
     }
+}
+
+.dark-theme {
+    .habit {
+        li {
+            border: 1px solid $darkgrey-color;
+            background-color: rgb(95, 91, 91);
+
+            @media (hover: hover) {
+
+                &:hover,
+                &:active {
+                    background-color: $darkviolet-transparent-color;
+                    transition: background-color 0.1s linear;
+                }
+            }
+        }
+    }
+}
