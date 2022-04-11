@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 5% 40% 55%;
+    grid-template-columns: 80px 40% 50%;
     grid-template-rows: 75% 25%;
     grid-template-areas:
         "header main side"
@@ -13,10 +13,16 @@
 .header-second {
     grid-area: header;
     background-color: $blue-transparent-color;
+    box-shadow: 10px 4px 4px $shadow-color;
+
+    
+
+    
 
     &__nav {
         padding-top: 25px;
         height: 100%;
+
 
         img {
             display: block;
@@ -33,8 +39,8 @@
 }
 
 .theme {
-    position: sticky;
-    top: 15px;
+    
+    
 
     .theme__block {
         max-width: 10rem;
@@ -121,10 +127,29 @@
 .sideblock {
     grid-area: side;
 
+    .sideblock__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 30px;
+    }
+
+    #hello {
+        height: 2em;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: $purple-color;
+        padding-left: 2em;
+        
+    }
+
     .habit_title {
         margin-left: 5rem;
         margin-bottom: 2rem;
         font-size: 1.6rem;
+        font-weight: 600;
+        height: 2em;
     }
 }
 
