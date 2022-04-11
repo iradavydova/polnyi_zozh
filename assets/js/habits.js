@@ -79,6 +79,10 @@ function deleteNote(e) {
     localStorage.setItem('notes', JSON.stringify(filteredItemsArray));
     localStorage.removeItem(`${parent.value}`);
     itemsArray = filteredItemsArray;
+    uncheck();
+    document.querySelector(".progress__bar").value = 0;
+    document.querySelector("#progress-label").innerHTML = (0 + "%");
+    document.getElementById('habit_title').textContent = "Название привычки"; // выводим название привычки справа
 }
 
 // удаление всех привычек из списка
@@ -93,6 +97,9 @@ function clearList() {
     notesCount = 0;
     localStorage.removeItem('habitCount');
     uncheck();
+    document.querySelector(".progress__bar").value = 0;
+    document.querySelector("#progress-label").innerHTML = (0 + "%");
+    document.getElementById('habit_title').textContent = "Название привычки"; // выводим название привычки справа
 }
 
 // добавлени значений в чекбоксы по дням недели из локального хранилища
@@ -124,7 +131,6 @@ function changeCheckbox(e) {
     let week_check = JSON.parse(localStorage.getItem(`${num_habit}`));
     localStorage.removeItem(`${num_habit}`);
     week_check[checkbox_id] = checkbox_checked;
-    console.log(week_check)
     localStorage.setItem(`${num_habit}`, JSON.stringify(week_check));
 }
 
