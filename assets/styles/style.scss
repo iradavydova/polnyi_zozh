@@ -42,6 +42,14 @@ html {
 
 @import "second_page.scss"; //импорт файла стилей для второй страницы сайта 
 
+.header-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: $blue-transparent-color;
+}
 
 
 .logo {

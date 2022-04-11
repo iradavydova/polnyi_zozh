@@ -19,33 +19,42 @@ body {
   margin-right: auto;
   width: 30em;
 }
+
 .registration .main-checkbox {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 0.2fr 2fr;
+  -ms-grid-columns: 0.2fr 2fr;
+      grid-template-columns: 0.2fr 2fr;
   text-align: start;
 }
+
 .registration .say_hi {
   font-size: 22px;
   color: #3f3d56;
   margin-top: 50px;
   margin-bottom: 33.76px;
 }
+
 .registration .form-control {
   margin-bottom: 22px;
-  background-color: rgb(247, 248, 248);
+  background-color: #f7f8f8;
   height: 48.81px;
   border-radius: 14px;
 }
+
 .registration #checkbox1 {
-  height: 16.2711868286px;
-  width: 16.7619037628px;
+  height: 16.27118682861328px;
+  width: 16.761903762817383px;
 }
+
 .registration .main-checkbox {
   margin-bottom: 20px;
 }
+
 .registration .text-xs-center {
   margin-bottom: 21px;
 }
+
 .registration .button {
   text-decoration: none;
   border-width: 0px;
@@ -56,23 +65,33 @@ body {
   color: white;
   background: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%);
   font-size: 16px;
-  box-shadow: 5px 5px 5px darkgrey;
+  -webkit-box-shadow: 5px 5px 5px darkgrey;
+          box-shadow: 5px 5px 5px darkgrey;
 }
+
 .registration .ili1 {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 0.2fr 1fr;
+  -ms-grid-columns: 1fr 0.2fr 1fr;
+      grid-template-columns: 1fr 0.2fr 1fr;
 }
+
 .registration .ili {
   margin-top: 7px;
   font-size: 12px;
   padding: 0 10px;
 }
+
 .registration .btn_google_facebook {
+  display: -ms-grid;
   display: grid;
-  align-content: center;
-  grid-template-columns: 1fr 1fr;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   margin-top: 10px;
 }
+
 .registration .btn1 {
   border-radius: 14px;
   text-decoration: none;
@@ -81,31 +100,39 @@ body {
   background-color: white;
   padding: 20px;
 }
+
 .registration .btn1:hover {
   border: 0.8px solid #DDDADA;
 }
+
 .registration .account {
   margin-top: 10px;
   font-size: 16px;
   color: #3f3d56;
   margin-bottom: 1em;
 }
+
 .registration .account .enter {
   font-weight: 500;
   color: #C58BF2;
   margin-left: 0.5em;
 }
+
 .registration .account p, .registration .account .enter {
   display: inline-block;
 }
+
 .registration .soglasie {
   font-size: 11px;
-  color: rgb(173, 164, 165);
+  color: #ada4a5;
 }
+
 .registration .ssilka {
   text-decoration: none;
-  color: rgb(173, 164, 165);
+  color: #ada4a5;
 }
+
 .registration .ssilka:hover {
   text-decoration: underline;
-}/*# sourceMappingURL=reg-style.css.map */
+}
+/*# sourceMappingURL=reg-style.css.map */
