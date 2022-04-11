@@ -49,7 +49,9 @@ function liMaker(note) {
     const btn_content = document.createElement('button');
     btn_content.type = 'button';
     btn_content.className = 'contentBtn';
-    btn_content.textContent = `${note.text}`;
+    let nameHabit = note.text;
+    let nameHabitUp = nameHabit.charAt(0).toUpperCase() + nameHabit.slice(1); // выводим название привычки справа
+    btn_content.textContent = `${nameHabitUp}`;
     btn_content.addEventListener("click", (e) => addContent(e));
 
     const btn_delete = document.createElement('button');
