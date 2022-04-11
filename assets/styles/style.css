@@ -152,12 +152,14 @@ html {
   text-align: center;
   padding-bottom: 4px;
 }
-#mark-done div input .select-done {
-  transform: scale(10);
-}
 #mark-done div input[type=checkbox] {
   width: 30px;
   height: 30px;
+}
+
+.today_style {
+  font-weight: 700;
+  background-color: #C58BF2;
 }
 
 .calendar {

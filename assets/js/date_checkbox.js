@@ -39,6 +39,11 @@ let formCheckbox = document.getElementById('mark-done');
 let labelbox = formCheckbox.querySelectorAll('label');
 let j = 0;
 labelbox.forEach(item => {
+    let dateInMass = dayOnWeek[j].slice(0, 2);
+    if (dateInMass == today.getDate()) {
+        item.classList.add('today_style');
+        //item.parentElement.classList.add('today_style'); // стиль для всего div today
+    }
     item.textContent += dayOnWeek[j];
     j++;
 });

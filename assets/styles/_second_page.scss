@@ -164,15 +164,17 @@
         text-align: center;
         padding-bottom: 4px;
 
-        input .select-done {
-            transform: scale(10);
-        }
-
         input[type="checkbox"] {
             width: 30px;
             height: 30px;
         }
     }
+}
+
+// стиль для сегодняшней даты над чекбоксами
+.today_style {
+    font-weight: 700;
+    background-color: $lavender-color;
 }
 
 .calendar {

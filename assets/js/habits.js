@@ -107,7 +107,9 @@ function addContent(e) {
     uncheck(); // снимаем все значения с чекбоксов
     let bar = document.querySelector(".progress__bar");
     bar.value = 0; // снимаем все значения с прогресс бара
-    document.getElementById('habit_title').textContent = e.target.textContent; // выводим название привычки справа
+    let nameHabit = e.target.textContent;
+    let nameHabitUp = nameHabit.charAt(0).toUpperCase() + nameHabit.slice(1);
+    document.getElementById('habit_title').textContent = nameHabitUp; // выводим название привычки справа
     let div_id = e.target.parentNode.id;
     let week_check = JSON.parse(localStorage.getItem(`${div_id}`));
     let week_keys = Object.keys(week_check);
