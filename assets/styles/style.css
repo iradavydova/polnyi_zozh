@@ -205,55 +205,67 @@ html {
   right: 2rem;
 }
 
-.content_container {
-  max-width: 1440px;
-  margin: 0px auto;
-  background: rgba(146, 163, 253, 0.25);
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(146, 163, 253, 0.25);
 }
 
 .logo {
-  width: 15%;
-  padding-top: 2vh;
-  padding-left: 3vw;
-}
-
-.logo svg {
-  width: 100%;
-  height: 100%;
-}
-
-.btn_decor > button {
-  color: #92A3FD;
-  background-color: #C58BF2;
-  padding: 8px;
-  font-size: 22px;
-  font-weight: 500;
-  border-radius: 15px;
-  -webkit-box-shadow: 7px 7px 5px #92A3FD;
-          box-shadow: 7px 7px 5px #92A3FD;
-  border-width: 2px;
-  border-color: #92A3FD;
+  width: 150px;
+  padding-top: 10px;
+  padding-left: 30px;
 }
 
 .quote-container {
+  width: 70%;
   text-align: center;
-  margin-bottom: 5rem;
+  margin: 10px 20px 50px 20px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 4px rgba(29, 22, 23, 0.07);
+          box-shadow: 4px 4px 4px rgba(29, 22, 23, 0.07);
 }
 
 .quote-container .quote {
   width: 80%;
   margin: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 20px;
 }
 
 .quote-container p {
-  color: #92A3FD;
-  font-size: 22px;
-  font-weight: 500;
+  color: #2F2E41;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
 }
 
-.quote-container #author,
-.quote-container .btn_decor {
+.quote-container #author {
+  text-align: right;
+}
+
+.quote-container button {
+  color: #2F2E41;
+  background-color: rgba(146, 163, 253, 0.25);
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
   text-align: right;
 }
 
@@ -261,24 +273,28 @@ html {
   margin-right: 8px;
 }
 
-.quote-container .quote-img {
+.information__maintext {
   width: 80%;
-  margin: auto;
+  margin: 50px auto 50px auto;
+  color: #2F2E41;
 }
 
-.quote-container .quote-img img {
-  width: 100%;
-}
-
-main > .information {
-  width: 80%;
-  margin: auto;
-  margin-bottom: 5rem;
-  color: #92A3FD;
+.btn-registration_decor > button {
+  color: white;
+  background: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%);
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  width: 22rem;
+  height: 5rem;
 }
 
 main > .information h1 {
   text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
 }
 
 main > .information h3 {
@@ -286,49 +302,149 @@ main > .information h3 {
           margin-block-end: 2vh;
 }
 
-main > .information .text,
-main > .information .btn_decor p {
-  font-size: 2em;
-  font-weight: 400;
+main > .information .information__flex {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-main > .information ul {
-  margin-left: 10vw;
+main > .information .information__flex .text {
+  width: 50%;
+  padding: 20px 20px;
+  text-align: justify;
+  font-size: 1.6em;
+  font-weight: 400;
+  line-height: 24px;
+  -webkit-box-shadow: 0px 10px 40px rgba(29, 22, 23, 0.07);
+          box-shadow: 0px 10px 40px rgba(29, 22, 23, 0.07);
+  border-radius: 20px;
+}
+
+main > .information .information__flex .img {
+  width: 35%;
+}
+
+main > .information .information__flex .img img {
+  width: 100%;
+}
+
+.habits-text {
+  background-color: rgba(146, 163, 253, 0.25);
+  margin-bottom: 100px;
+}
+
+.habits-text__flex {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.habits-text__flex .list {
+  width: 50%;
+  padding: 20px 20px;
+  text-align: justify;
+  font-size: 1.6em;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.habits-text__flex .list h3 {
+  font-weight: 500;
+  text-align: center;
+}
+
+.habits-text__flex .img {
+  width: 35%;
+}
+
+.habits-text__flex img {
+  width: 90%;
+}
+
+ul {
+  margin-left: 3em;
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
 }
 
-main > .information li {
+li {
   margin-bottom: 10px;
+  padding-left: 2em;
 }
 
-main > .information li.productivity {
+li.productivity {
   list-style-image: url(/assets/images/open-book.png);
 }
 
-main > .information li.fitness {
+li.fitness {
   list-style-image: url(/assets/images/weights.png);
 }
 
-main > .information li.meditation {
+li.meditation {
   list-style-image: url(/assets/images/lotus.png);
 }
 
-main > .information li.drinking {
+li.drinking {
   list-style-image: url(/assets/images/water-bottle.png);
 }
 
-main > .information li.eating {
+li.eating {
   list-style-image: url(/assets/images/food.svg);
 }
 
-main > .information li.sleep {
+li.sleep {
   list-style-image: url(/assets/images/bed.svg);
 }
 
+.main-registration {
+  width: 80%;
+  text-align: center;
+  color: #2F2E41;
+  font-size: 28px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
 footer {
-  height: 15vh;
-  background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
+  height: 10vh;
+  background-color: rgba(238, 164, 206, 0.5);
+}
+
+footer p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #3F3D56;
+  padding-left: 30px;
+  padding-top: 25px;
 }
 
 .list_of_habits {
