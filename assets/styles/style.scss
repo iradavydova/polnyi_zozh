@@ -7,7 +7,7 @@ $aqua-color: #034C65;
 $blue-color: #2F2E41;
 $grey-color: #F1F1F1;
 $lavender-color: #C58BF2;
-$lavender-gradient: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%); 
+$lavender-gradient: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%);
 
 $blue-transparent-color: rgba(146, 163, 253, 0.25);
 $pink-transparent-color: rgba(238, 164, 206, 0.5);
@@ -90,7 +90,7 @@ html {
         border-radius: 10px;
         border: none;
         text-align: right;
-        
+
     }
 
     #author {
@@ -115,7 +115,7 @@ html {
     border: none;
     width: 22rem;
     height: 5rem;
-    
+
 }
 
 main>.information {
@@ -166,22 +166,20 @@ main>.information {
 .habits-text {
     background-color: $blue-transparent-color;
     margin-bottom: 100px;
-    
 
+    &__flex {
+        width: 80%;
+        margin: auto;
+        display: flex;
 
-&__flex {
-    width: 80%;
-    margin: auto;
-    display: flex;
-        
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-between;
         padding-top: 20px;
         padding-bottom: 20px;
-        
-        
+
+
         .list {
             width: 50%;
             padding: 20px 20px;
@@ -190,75 +188,76 @@ main>.information {
             font-size: 1.6em;
             font-weight: 400;
             line-height: 24px;
-            
-            
+
+
             h3 {
                 font-weight: 500;
                 text-align: center;
             }
-    
-        
+
+
         }
 
         .img {
             width: 35%;
         }
 
-            img {
-                width: 90%;
-            }
-        
+        img {
+            width: 90%;
         }
-    }
-
-    ul {
-        margin-left: 3em;
-        margin-block-start: 0px;
-    }
-
-    li {
-        margin-bottom: 10px;
-        padding-left: 2em;
 
     }
+}
 
-    li.productivity {
-        list-style-image: url(/assets/images/open-book.png);
-    }
+ul {
+    margin-left: 3em;
+    margin-block-start: 0px;
+}
 
-    li.fitness {
-        list-style-image: url(/assets/images/weights.png);
-    }
+li {
+    margin-bottom: 10px;
+    padding-left: 2em;
 
-    li.meditation {
-        list-style-image: url(/assets/images/lotus.png);
-    }
+}
 
-    li.drinking {
-        list-style-image: url(/assets/images/water-bottle.png);
-    }
+li.productivity {
+    list-style-image: url(/assets/images/open-book.png);
+}
 
-    li.eating {
-        list-style-image: url(/assets/images/food.svg);
-    }
+li.fitness {
+    list-style-image: url(/assets/images/weights.png);
+}
 
-    li.sleep {
-        list-style-image: url(/assets/images/bed.svg);
-    }
+li.meditation {
+    list-style-image: url(/assets/images/lotus.png);
+}
 
-    .main-registration {
-        width: 80%;
-        
-        text-align: center;
-        color: $blue-color;
-        font-size: 28px;
-        margin: auto;
-        margin-bottom: 50px;
-    }
+li.drinking {
+    list-style-image: url(/assets/images/water-bottle.png);
+}
+
+li.eating {
+    list-style-image: url(/assets/images/food.svg);
+}
+
+li.sleep {
+    list-style-image: url(/assets/images/bed.svg);
+}
+
+.main-registration {
+    width: 80%;
+
+    text-align: center;
+    color: $blue-color;
+    font-size: 28px;
+    margin: auto;
+    margin-bottom: 50px;
+}
 
 footer {
     height: 10vh;
     background-color: $pink-transparent-color;
+
     p {
         font-size: 1.2rem;
         font-weight: 100;
@@ -266,7 +265,7 @@ footer {
         padding-left: 30px;
         padding-top: 25px;
     }
-    
+
 }
 
 

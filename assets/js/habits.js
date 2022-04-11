@@ -49,7 +49,9 @@ function liMaker(note) {
     const btn_content = document.createElement('button');
     btn_content.type = 'button';
     btn_content.className = 'contentBtn';
-    btn_content.textContent = `${note.text}`;
+    let nameHabit = note.text;
+    let nameHabitUp = nameHabit.charAt(0).toUpperCase() + nameHabit.slice(1); // выводим название привычки справа
+    btn_content.textContent = `${nameHabitUp}`;
     btn_content.addEventListener("click", (e) => addContent(e));
 
     const btn_delete = document.createElement('button');
@@ -79,6 +81,10 @@ function deleteNote(e) {
     localStorage.setItem('notes', JSON.stringify(filteredItemsArray));
     localStorage.removeItem(`${parent.value}`);
     itemsArray = filteredItemsArray;
+    uncheck();
+    document.querySelector(".progress__bar").value = 0;
+    document.querySelector("#progress-label").innerHTML = (0 + "%");
+    document.getElementById('habit_title').textContent = "Название привычки"; // выводим название привычки справа
 }
 
 // удаление всех привычек из списка
@@ -93,6 +99,9 @@ function clearList() {
     notesCount = 0;
     localStorage.removeItem('habitCount');
     uncheck();
+    document.querySelector(".progress__bar").value = 0;
+    document.querySelector("#progress-label").innerHTML = (0 + "%");
+    document.getElementById('habit_title').textContent = "Название привычки"; // выводим название привычки справа
 }
 
 // добавлени значений в чекбоксы по дням недели из локального хранилища
@@ -100,7 +109,9 @@ function addContent(e) {
     uncheck(); // снимаем все значения с чекбоксов
     let bar = document.querySelector(".progress__bar");
     bar.value = 0; // снимаем все значения с прогресс бара
-    document.getElementById('habit_title').textContent = e.target.textContent; // выводим название привычки справа
+    let nameHabit = e.target.textContent;
+    let nameHabitUp = nameHabit.charAt(0).toUpperCase() + nameHabit.slice(1);
+    document.getElementById('habit_title').textContent = nameHabitUp; // выводим название привычки справа
     let div_id = e.target.parentNode.id;
     let week_check = JSON.parse(localStorage.getItem(`${div_id}`));
     let week_keys = Object.keys(week_check);
@@ -124,7 +135,6 @@ function changeCheckbox(e) {
     let week_check = JSON.parse(localStorage.getItem(`${num_habit}`));
     localStorage.removeItem(`${num_habit}`);
     week_check[checkbox_id] = checkbox_checked;
-    console.log(week_check)
     localStorage.setItem(`${num_habit}`, JSON.stringify(week_check));
 }
 
