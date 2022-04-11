@@ -29,7 +29,7 @@ body {
 }
 
 .registration .say_hi {
-  font-size: 20px;
+  font-size: 22px;
   color: #3f3d56;
   margin-top: 50px;
   margin-bottom: 33.76px;
@@ -59,9 +59,8 @@ body {
   text-decoration: none;
   border-width: 0px;
   outline: none;
+  width: 80%;
   padding: 18px;
-  padding-left: 80px;
-  padding-right: 80px;
   border-radius: 99px;
   color: white;
   background: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%);
@@ -108,6 +107,19 @@ body {
 
 .registration .account {
   margin-top: 10px;
+  font-size: 16px;
+  color: #3f3d56;
+  margin-bottom: 1em;
+}
+
+.registration .account .enter {
+  font-weight: 500;
+  color: #C58BF2;
+  margin-left: 0.5em;
+}
+
+.registration .account p, .registration .account .enter {
+  display: inline-block;
 }
 
 .registration .soglasie {
@@ -122,9 +134,5 @@ body {
 
 .registration .ssilka:hover {
   text-decoration: underline;
-}
-
-.registration .exit {
-  color: #ff006a;
 }
 /*# sourceMappingURL=reg-style.css.map */

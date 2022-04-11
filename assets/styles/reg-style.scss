@@ -2,7 +2,7 @@
 $whiteblue-color: #E7F7FF;
 $lightblue-color: #CCEEEF;
 $lightgrey-color: #E7E8FF;
-$purple-color: #3F3D56;
+$purple-color: #3f3d56;
 
 $lavender-color: #C58BF2;
 
@@ -47,8 +47,8 @@ body {
     }
 
     .say_hi {
-        font-size: 20px;
-        color: rgba(63, 61, 86, 1);
+        font-size: 22px;
+        color: $purple-color;
         margin-top: 50px;
         margin-bottom: 33.76px;
     }
@@ -77,9 +77,9 @@ body {
         text-decoration: none;
         border-width: 0px;
         outline: none;
+        width: 80%;
         padding: 18px;
-        padding-left: 80px;
-        padding-right: 80px;
+        
         border-radius: 99px;
         color: white;
         background: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%);
@@ -103,6 +103,10 @@ body {
         align-content: center;
         grid-template-columns: 1fr 1fr;
         margin-top: 10px;
+        // width: 50%;
+        // margin: auto;
+
+        
     }
 
     .btn1 {
@@ -120,6 +124,21 @@ body {
 
     .account {
         margin-top: 10px;
+        font-size: 16px;
+        color: $purple-color;
+        margin-bottom: 1em;
+
+        .enter {
+            font-weight: 500;
+            color: $lavender-color;
+            margin-left: 0.5em;
+
+        }
+
+        p, .enter {
+            display: inline-block;
+        }
+       
     }
 
     .soglasie {
@@ -136,9 +155,7 @@ body {
         text-decoration: underline;
     }
 
-    .exit {
-        color: rgb(255, 0, 106);
-    }
+    
 }
 
 // шаблон под медиа запросы для адаптации; используйте по необходимости, исходя из расположения контента)
