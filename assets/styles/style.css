@@ -354,3 +354,8 @@ footer {
   height: 100%;
   text-align: end;
 }/*# sourceMappingURL=style.css.map */
+
+ /* силь для темной темы */
+body.dark-theme {
+  background-color: grey;
+}
