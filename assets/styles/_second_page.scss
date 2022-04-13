@@ -6,7 +6,6 @@
         "header main side"
         "header main pic";
 
-
     height: 100vh;
 }
 
@@ -14,10 +13,6 @@
     grid-area: header;
     background-color: $blue-transparent-color;
     box-shadow: 10px 0px 10px rgb(225, 225, 225);
-
-
-
-
 
     &__nav {
         padding-top: 25px;
@@ -41,9 +36,6 @@
 }
 
 .theme {
-
-
-
     .theme__block {
         max-width: 10rem;
         margin-left: auto;
@@ -58,10 +50,8 @@
 
     p {
         font-size: 1rem;
-
     }
 }
-
 
 
 // стили для списка привычек
@@ -160,8 +150,6 @@
 
 
 
-
-
 .sideblock {
     grid-area: side;
 
@@ -215,23 +203,18 @@
         box-shadow: 4px 4px 4px #CBCBCB;
         border-radius: 99px;
         appearance: none;
-
     }
 
     progress::-webkit-progress-bar {
         background: $blue-transparent-color;
         border-radius: 99px;
-
-
     }
 
     progress::-webkit-progress-value {
         background: $lavender-gradient;
         border-radius: 99px;
-
     }
 }
-
 
 
 #mark-done {
@@ -268,6 +251,9 @@
     margin-left: 5rem;
     width: 80%;
 }
+
+
+
 
 .remind {
     border-radius: 10px;

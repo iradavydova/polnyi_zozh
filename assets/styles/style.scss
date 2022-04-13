@@ -1,9 +1,6 @@
 // Задаем переменные: цвета, шрифт, переменные для брейкпоинтов
-$whiteblue-color: #E7F7FF;
-$lightblue-color: #CCEEEF;
 $lightgrey-color: #E7E8FF;
 $purple-color: #3F3D56;
-$aqua-color: #034C65;
 $blue-color: #2F2E41;
 $grey-color: #F1F1F1;
 $lavender-color: #C58BF2;
@@ -274,6 +271,33 @@ footer {
         padding-top: 25px;
     }
 
+}
+
+
+body {
+    &.dark-theme {
+
+
+        p, h1, h2, .habit_title {color: $lightgrey-color;}
+
+        .header-second {background-color: #56565c;}
+
+        .input_habit {
+            
+            background-color: #7b7b80;
+            input {
+                color: $lightgrey-color;
+                background-color: #7b7b80;
+            }
+        }
+        
+        main, .list_of_habits {background-color: #2d2d30;}
+
+        background-color: #1a1a1c;
+
+
+        
+    }
 }
 
 

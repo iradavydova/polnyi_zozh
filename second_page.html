@@ -17,7 +17,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
     <div class="grid-container content_container">
 
         <header class="header-second">
@@ -59,13 +59,13 @@
                     <div class="theme__block">
                         <div class="theme_light">
                             <p>светлая</p>
-                            <a href="#">
+                            <a onclick="darkThemeOff()" href="#">
                                 <img src="assets/img/sun-icon.svg" alt="светлая">
                             </a>
                         </div>
                         <div class="theme_dark">
                             <p>тёмная</p>
-                            <a href="#">
+                            <a onclick="darkThemeOn()"class="toggle" href="#">
                                 <img src="assets/img/moon-icon.svg" alt="тёмная">
                             </a>
                         </div>
@@ -135,6 +135,7 @@
     <script src="/assets/js/progressbar.js"></script>
     <script src="/assets/js/hello.js"></script>
     <script src="/assets/js/date_checkbox.js"></script>
+    <script src="assets/js/dark-theme.js"></script>
 </body>
 
 </html>

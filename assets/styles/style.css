@@ -572,4 +572,29 @@ footer p {
   padding-left: 30px;
   padding-top: 25px;
 }
+
+body.dark-theme {
+  background-color: #1a1a1c;
+}
+
+body.dark-theme p, body.dark-theme h1, body.dark-theme h2, body.dark-theme .habit_title {
+  color: #E7E8FF;
+}
+
+body.dark-theme .header-second {
+  background-color: #56565c;
+}
+
+body.dark-theme .input_habit {
+  background-color: #7b7b80;
+}
+
+body.dark-theme .input_habit input {
+  color: #E7E8FF;
+  background-color: #7b7b80;
+}
+
+body.dark-theme main, body.dark-theme .list_of_habits {
+  background-color: #2d2d30;
+}
 /*# sourceMappingURL=style.css.map */
